@@ -344,13 +344,13 @@ Single slide style
     background-image: url("../images/bg/security.jpg");
   }
   .cd-hero-slider li:nth-of-type(2) {
-    background-image: url("../images/bg/hospital.jpeg");
+    background-image: url("../images/bg/shipyard.jpg");
   }
   .cd-hero-slider:hover li:nth-of-type(2){
     background-color: #000;
   }
   .cd-hero-slider li:nth-of-type(3) {
-    background-image: url("../images/bg/shipyard.jpg");
+    background-image: url("../images/bg/hospital.jpeg");
   }
   /*removed c.cd-half-width*/
   /*.cd-hero-slider .cd-full-width,
@@ -544,7 +544,7 @@ Slider navigation
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .cd-slider-nav .cd-marker.item-2 {
-  background-color: rgba(0, 188, 212, 0.78);
+  background-color: rgba(237, 147, 48, 0.83);
   color:rgba(0, 188, 212, 0.78);
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
@@ -560,7 +560,7 @@ Slider navigation
   transform: translateX(100%);
 }
 .cd-slider-nav .cd-marker.item-3 {
-  background-color: rgba(237, 147, 48, 0.83);
+  background-color: rgba(0, 188, 212, 0.78);
   color: rgba(237, 147, 48, 0.83);
   -webkit-transform: translateX(200%);
   -moz-transform: translateX(200%);
@@ -664,10 +664,10 @@ Slider navigation
   background-color:rgba(0,0,0,0.83);
 }
 .cd-slider-nav li:nth-of-type(2) a:hover {
-  background-color:rgba(0, 188, 212, 0.78);
+  background-color:rgba(237, 147, 48, 0.83);
 }
 .cd-slider-nav li:nth-of-type(3) a:hover {
-  background-color: rgba(237, 147, 48, 0.83);
+  background-color: rgba(0, 188, 212, 0.78);
 }
 /*custom hover ends*/
 .cd-slider-nav li.selected:nth-of-type(2) a::before {
