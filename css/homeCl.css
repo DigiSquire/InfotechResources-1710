@@ -187,8 +187,8 @@ body.loaded #preloader {
 	}
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
 	#home .container {
 		padding-bottom: 5px;
 	}
-}
+}*/
