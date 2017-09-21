@@ -545,7 +545,7 @@ Slider navigation
 }
 .cd-slider-nav .cd-marker.item-2 {
   background-color: rgba(237, 147, 48, 0.83);
-  color:rgba(0, 188, 212, 0.78);
+  color:rgba(237, 147, 48, 0.83);
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
@@ -561,7 +561,7 @@ Slider navigation
 }
 .cd-slider-nav .cd-marker.item-3 {
   background-color: rgba(0, 188, 212, 0.78);
-  color: rgba(237, 147, 48, 0.83);
+  color:rgba(0, 188, 212, 0.78);
   -webkit-transform: translateX(200%);
   -moz-transform: translateX(200%);
   -ms-transform: translateX(200%);
