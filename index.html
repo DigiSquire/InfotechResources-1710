@@ -139,7 +139,7 @@
          }
          #home .navbar-nav.navbar-right>li a {
          color: #000;
-         font-size: 0.80em;
+         font-size: 0.85em;
          padding: 0 15px 10px 0;
          text-transform: uppercase;
          font-weight: 600;
@@ -152,12 +152,6 @@
          #home .navigation-background .navigation-menu .navbar-nav li a:hover {
          color: #555;
          }
-         /*header custom*/
-         /*@media (min-width: 768px){
-         .navbar-right {
-         padding-top: 14px;
-         }
-         }*/
          @media only screen and (max-width: 767px){
          .navigation-background .navigation-menu .navbar-nav li a {
          padding: 11px 15px;
@@ -219,6 +213,12 @@
          .footer-section a {
          color: #ffffff;
          }
+         .navbar-brand img {
+         min-width: 60px;
+         }
+         .navbar-brand img {
+            max-width: 70px;
+          }
          /* Responsive */
          @media only screen and (min-width: 767px) and (max-width: 991px) {
          .navigation-menu .navbar-nav li a {
@@ -366,10 +366,11 @@
          padding: 0 0 10px 0;
          }
          }
-         .navbar-brand img {
-         min-width: 60px;
-         }
+
          @media (min-width:1024px) {
+           .navbar-brand img {
+              max-width: 79px;
+              }
          .cd-slider-nav {
          position: absolute;
          width: 50.5%;
@@ -423,9 +424,20 @@
          top: 1px;
          left: -9px;
          }
-         .navbar-brand img {
-            max-width: 70px;
-            }
+         .scroll-to-top {
+          display: none;
+          width: 50px;
+          height: 50px;
+          font-size: 25px;
+          line-height: 50px;
+          text-align: center;
+          color: #fff;
+          position: fixed;
+          right: 0px;
+          top: 10em;
+          z-index: 999;
+        }
+
       </style>
    </head>
    <body>
@@ -572,6 +584,7 @@
             </div>
          </div>
       </header>
+      <a href="https://api.whatsapp.com/send?phone=919049593581&text=Hi%20Team%20Infotech,%20have%20a%20query%20regarding" class="scroll-to-top" target="_blank" style="display: inline;"><img src="images/favicon/wp.png" alt="Infotech logo"></a>
       <section class="cd-hero">
          <ul class="cd-hero-slider">
 

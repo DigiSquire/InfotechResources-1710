@@ -66,7 +66,7 @@ header {
 .cd-dropdown-wrapper {
   display: inline-block;
   position: relative;
-  margin: 11px 0 0 203px;
+  margin: 11px 0 0 183px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -119,7 +119,7 @@ font-weight: 600;
 }
 @media only screen and (min-width: 1024px) {
   .cd-dropdown-trigger {
-    font-size: 0.80em;
+    font-size: 0.85em;
   }
   /*.cd-dropdown-trigger.dropdown-is-active {
     background-color: #3f8654;
