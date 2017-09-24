@@ -51,6 +51,21 @@
 			offset: 195
 
 		});
+
+        /* Statistics Counter */
+
+        $('.statistics').appear(function() {
+           var counter = $(this).find('.statistics-count');
+           var toCount = counter.data('count');
+
+           $(counter).countTo({
+           from: 0,
+           to: toCount,
+           speed: 5000,
+           refreshInterval: 50
+           })
+           });
+		   
 		/* Google Map */
 		 $('#my-address').gMap({
 		    zoom: 5,
