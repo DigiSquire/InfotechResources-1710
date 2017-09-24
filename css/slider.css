@@ -146,7 +146,12 @@ Slider
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media only screen and (max-width: 767px){
+	.cd-hero {
+    padding-top: 44px;
+	}
 
+}
 .cd-hero-slider {
   position: relative;
   height: 360px;
@@ -211,20 +216,16 @@ Single slide style
 .cd-hero-slider li:first-of-type {
   background-color: #2c343b;
 }
+.cd-hero-slider li:nth-of-type(1) {
+  background-image: url("../images/bg/shipyard-mobile.jpeg");
+}
 .cd-hero-slider li:nth-of-type(2) {
-  background-color: #3d4952;
-  background-image: url("../assets/tech-1-mobile.jpg");
+  background-image: url("../images/bg/security.jpg");
 }
 .cd-hero-slider li:nth-of-type(3) {
-  background-color: #586775;
-  background-image: url("../assets/tech-2-mobile.jpg");
-}
-.cd-hero-slider li:nth-of-type(4) {
-  background-color: #2c343b;
-  background-image: url("../assets/video-replace-mobile.jpg");
+  background-image: url("../images/bg/hospital-mobile.jpeg");
 }
 .cd-hero-slider li:nth-of-type(5) {
-  background-color: #2c343b;
   background-image: url(../assets/img.jpg);
 }
 .cd-hero-slider .cd-full-width,
@@ -518,6 +519,10 @@ Slider navigation
   height: 55px;
   background-color: rgba(0, 1, 1, 0.5);
 }
+
+
+
+
 .cd-slider-nav nav, .cd-slider-nav ul, .cd-slider-nav li, .cd-slider-nav a {
   height: 100%;
 }
@@ -747,4 +752,39 @@ Javascript disabled
 
 .no-js .cd-slider-nav {
   display: none;
+}
+
+@media only screen and (max-width: 767px) {
+	.cd-slider-nav li {
+    transform: rotate(180deg);
+	}
+	.cd-slider-nav nav {
+		transform: rotate(180deg);
+	   
+	}
+	.cd-slider-nav li:nth-of-type(3) a::before {
+	  
+		font-size: 1.6em;
+	}
+	.cd-slider-nav li:nth-of-type(2) a::before {
+	  
+		font-size: 1.6em;
+	}
+	.cd-slider-nav li:nth-of-type(1) a::before {
+	  
+		font-size: 1.6em;
+	}
+	.cd-slider-nav a {
+	   
+		font-size: 1.2rem;
+	 
+	}
+	.cd-slider-nav li {
+		width: 89px;
+	 
+	}
+	.cd-slider-nav .cd-marker {
+		width: 89px;
+		}
+	
 }
