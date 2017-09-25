@@ -35,11 +35,6 @@
 				  $('#eId').addClass('email-load');
 			}
 		});
-		//Script to Activate the Carousel
-		$('.carousel').carousel({
-			interval: 6000, //changes the speed
-			pause: "hover"
-		})
 		/* Mobile Navigation Hide or Collapse on Click */
 		$(document).on('click', '.navbar-collapse.in', function (e) {
 			if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
@@ -65,7 +60,7 @@
            refreshInterval: 50
            })
            });
-		   
+
 		/* Google Map */
 		 $('#my-address').gMap({
 		    zoom: 5,

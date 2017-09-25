@@ -19,12 +19,12 @@ body,html {
 	font-family: 'Poppins', sans-serif;
 }
 ::selection {
-	background-color: #ffffff;
-	color: #ffffff;
+	background-color: #3297FD;
+	color: #fff;
 }
 ::-moz-selection {
-	background-color: #ffffff;
-	color: #ffffff;
+	background-color: #3297FD;
+	color: #fff;
 }
 
 h1,
@@ -54,13 +54,13 @@ a:hover {
 
 a:focus {
 	outline: none;
+	color:#fff;
 	text-decoration: none;
 }
 
 p {
 	line-height: 32px;
 }
-
 
 ul,
 li {
@@ -74,7 +74,6 @@ li {
 	padding-right: 0px;
 	padding-left: 13px;
 }
-
 
 /* Preloader */
 #preloader {
@@ -163,6 +162,11 @@ body.loaded #preloader {
 		transform: rotate(360deg);
 	}
 }
+
+/*Home section*/
+ .home-section {
+ height: 100%;
+ }
 /*Responsive*/
 /*home container*/
 @media (max-width: 767px) {
@@ -182,9 +186,3 @@ body.loaded #preloader {
 		padding-bottom: 1px;
 	}
 }
-
-/*@media (min-width: 992px) {
-	#home .container {
-		padding-bottom: 5px;
-	}
-}*/
