@@ -181,7 +181,11 @@ min-width: 60px;
 .navbar-brand img {
 	 max-width: 70px;
  }
-
+ .digisquire-credit a {
+ color: #ff8800;
+ font-weight: 600;
+ font-size: 1.15em;
+ }
  /*Responsive*/
 
 
@@ -272,5 +276,3 @@ min-width: 60px;
 			 }
 
 	}
-
-	
