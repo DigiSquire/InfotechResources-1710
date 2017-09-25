@@ -17,7 +17,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   color: #2c343b;
-  background-color: #fff;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -146,12 +146,7 @@ Slider
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media only screen and (max-width: 767px){
-	.cd-hero {
-    padding-top: 107px;
-	}
 
-}
 .cd-hero-slider {
   position: relative;
   height: 360px;
@@ -251,7 +246,7 @@ Single slide style
 }
 .cd-hero-slider .cd-img-container {
   /* hide image on mobile device */
-  display: none;
+  display: block;
 }
 .cd-hero-slider .cd-img-container img {
   position: absolute;
@@ -760,31 +755,52 @@ Javascript disabled
 	}
 	.cd-slider-nav nav {
 		transform: rotate(180deg);
-
+	   
 	}
 	.cd-slider-nav li:nth-of-type(3) a::before {
-
+	  
 		font-size: 1.6em;
 	}
 	.cd-slider-nav li:nth-of-type(2) a::before {
-
+	  
 		font-size: 1.6em;
 	}
 	.cd-slider-nav li:nth-of-type(1) a::before {
-
+	  
 		font-size: 1.6em;
 	}
 	.cd-slider-nav a {
-
+	   
 		font-size: 1.2rem;
-
+	 
 	}
 	.cd-slider-nav li {
 		width: 89px;
-
+	 
 	}
 	.cd-slider-nav .cd-marker {
 		width: 89px;
 		}
-
+	
 }
+@media only screen and (max-width: 358px) {
+.cd-hero-slider {
+    height: 468px;
+}
+}
+@media only screen and (min-width:359px)and (max-width: 360px) {
+.cd-hero-slider {
+    height: 540px;
+}
+}
+@media only screen and (min-width:361px) and (max-width: 414px) {
+.cd-hero-slider {
+    height: 559px;
+}
+}
+@media only screen and (max-width: 767px) {
+.cd-hero-slider .cd-full-width, .cd-hero-slider .cd-half-width {
+   /*  top: 75px; */
+}
+}
+
