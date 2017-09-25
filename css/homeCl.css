@@ -40,12 +40,12 @@ a {
 	transition: 300ms;
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/*border: 0;*/
 }
 
-img {
+/*img {
 	width: 100%;
-}
+}*/
 
 a:hover {
 	color: #fff;
@@ -59,7 +59,7 @@ a:focus {
 }
 
 p {
-	line-height: 32px;
+	line-height: 20px;
 }
 
 ul,
