@@ -61,6 +61,7 @@ margin: 0;
 -webkit-transition: all 0.3s ease-out;
 transition: all 0.3s ease-out;
 background: #fff;
+box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.48);
 }
 .navigation-background .navigation-menu .navbar-nav li a {
 color: #000;
