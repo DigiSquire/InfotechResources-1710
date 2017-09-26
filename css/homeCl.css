@@ -60,6 +60,7 @@ a:focus {
 
 p {
 	line-height: 20px;
+	text-align: justify;
 }
 
 ul,
