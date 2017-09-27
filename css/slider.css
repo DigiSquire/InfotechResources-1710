@@ -32,6 +32,7 @@ a {
 Main Components
 
 -------------------------------- */
+
 .cd-header {
   position: absolute;
   z-index: 2;
@@ -62,7 +63,33 @@ Main Components
     margin: 23px 0 0 5%;
   }
 }
-
+.hospital-content{
+  position: absolute;
+  width: 440px;
+  height: 100%;
+  background-color: rgba(0, 188, 212, 0.49);
+  padding: 11em 40px;
+  display: block;
+  opacity: 1;
+}
+.security-content{
+  position: absolute;
+  width: 440px;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.43);
+  padding: 11em 40px;
+  display: block;
+  opacity: 1;
+}
+.industrial-content{
+  position: absolute;
+  width: 440px;
+  height: 100%;
+  background-color: rgba(237, 147, 48, 0.52);
+  padding: 11em 40px;
+  display: block;
+  opacity: 1;
+}
 .cd-primary-nav {
   /* mobile first - navigation hidden by default, triggered by tap/click on navigation icon */
   float: right;
@@ -200,6 +227,18 @@ Slider
     position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  .hospital-content{
+    height: 91.5%;
+    right: 22%;
+  }
+  .security-content{
+    height:91.5%;
+    right: 22%;
+  }
+  .industrial-content{
+    height: 91.5%;
+    right: 22%;
   }
 }
 @media only screen and (min-width: 1170px) {
