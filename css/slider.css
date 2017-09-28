@@ -170,7 +170,7 @@ Slider
   -moz-transition: -moz-transform 0.5s;
   transition: transform 0.5s;
 }
-@media only screen and (min-width: 768px) and (max-width:1300px) {
+@media only screen and (min-width: 768px) and (max-width:1400px) {
   .cd-hero-slider {
     position: relative;
     height: 100%;
@@ -339,7 +339,7 @@ Single slide style
     font-size: 1.6rem;
   }
   .cd-hero-slider {
-    height: 680px;
+    height: 100%;
   }
 }
 
@@ -715,12 +715,15 @@ Slider navigation
   }
   .industrial-content {
     width: 72%;
+    height: 100%;
   }
   .security-content{
     width: 72%;
+    height: 100%;
   }
   .hospital-content{
     width: 72%;
+    height: 100%;
   }
   #cd-logo {
     margin: 23px 0 0 5%;
@@ -829,7 +832,7 @@ Javascript disabled
     padding-left: 0;
     }
     .cd-hero-slider p {
-      font-size: 1.2em !important;
+      font-size: 1.1em !important;
       line-height: 1.2em;
       text-align: justify;
       font-family:'calibri';
@@ -840,4 +843,30 @@ Javascript disabled
         height: 76%;
     }
 
+}
+@media only screen and (min-width:1024px) {
+      .cd-slider-nav {
+      position: absolute;
+      width: 50.5%;
+      bottom: 292px;
+      right: 71.19%;
+      z-index: 2;
+      text-align: center;
+      min-height: 95px;
+      background-color: rgba(0, 1, 1, 0.5);
+      transform: rotate(270deg);
+      }
+    .cd-slider-nav a {
+    padding-top: 48px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+     }
+}
+@media only screen and (max-width:1024px) and (orientation: landscape) {
+      .cd-slider-nav {
+        width: 67%;
+        bottom: 42.4%;
+        right: 62.45%;
+      }
 }
