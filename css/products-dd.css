@@ -1007,3 +1007,22 @@ font-weight: 600;
 .no-js .cd-dropdown-wrapper .cd-close {
   display: none;
 }
+/*custom responsive*/
+@media only screen and (min-width: 768px) and (max-width:991px) {
+  #home .cd-dropdown-wrapper {
+    margin-left: -5em;
+    font-size: 0.85em;
+        top: 0.25em;
+  }
+}
+@media only screen and (min-width:992px) and (max-width:1023px) {
+  #home .cd-dropdown-wrapper {
+    margin-left: 6em;
+    font-size: 0.85em;
+  }
+}
+@media only screen and (min-width:1024px) and (max-width:1199px) {
+  #home .cd-dropdown-wrapper {
+    margin-left: 5em;
+  }
+}

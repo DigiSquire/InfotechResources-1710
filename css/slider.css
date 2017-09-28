@@ -44,12 +44,7 @@ Main Components
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media only screen and (min-width: 768px) {
-  .cd-header {
-    height: 70px;
-    background-color: transparent;
-  }
-}
+
 
 #cd-logo {
   float: left;
@@ -58,14 +53,11 @@ Main Components
 #cd-logo img {
   display: block;
 }
-@media only screen and (min-width: 768px) {
-  #cd-logo {
-    margin: 23px 0 0 5%;
-  }
-}
+
+
 .hospital-content{
   position: absolute;
-  width: 440px;
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 188, 212, 0.49);
   padding: 11em 40px;
@@ -74,7 +66,7 @@ Main Components
 }
 .security-content{
   position: absolute;
-  width: 440px;
+  width: 100%;
   height:100%;
   background-color: rgba(0, 0, 0, 0.43);
   padding: 11em 40px;
@@ -83,7 +75,7 @@ Main Components
 }
 .industrial-content{
   position: absolute;
-  width: 440px;
+  width: 100%;
   height: 100%;
   background-color: rgba(237, 147, 48, 0.52);
   padding: 11em 40px;
@@ -126,44 +118,6 @@ Main Components
   border-top: 1px solid #333c44;
   color: #ffffff;
 }
-@media only screen and (min-width: 768px) {
-  .cd-primary-nav {
-    /* reset navigation values */
-    width: auto;
-    height: auto;
-    background: none;
-  }
-  .cd-primary-nav ul {
-    position: static;
-    width: auto;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    line-height: 70px;
-  }
-  .cd-primary-nav ul.is-visible {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-  }
-  .cd-primary-nav li {
-    display: inline-block;
-    margin-left: 1em;
-  }
-  .cd-primary-nav a {
-    display: inline-block;
-    height: auto;
-    font-weight: 600;
-    line-height: normal;
-    background: transparent;
-    padding: .6em 1em;
-    border-top: none;
-  }
-}
 
 /* --------------------------------
 
@@ -178,7 +132,7 @@ Slider
 
 .cd-hero-slider {
   position: relative;
-  height: 360px;
+  height: 100%;
   overflow: hidden;
 }
 .cd-hero-slider li {
@@ -239,11 +193,6 @@ Slider
   .industrial-content{
     height: 91.5%;
     right: 22%;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-hero-slider {
-    height: 680px;
   }
 }
 
@@ -349,10 +298,7 @@ Single slide style
 .cd-hero-slider h2 {
   font-size: 2.4rem;
 }
-.cd-hero-slider p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-}
+
 .cd-hero-slider .cd-btn {
   display: inline-block;
   padding: 1.2em 1.4em;
@@ -380,57 +326,9 @@ Single slide style
 .no-touch .cd-hero-slider .cd-btn.secondary:hover {
   background-color: #161a1e;
 }
-@media only screen and (min-width: 768px) {
-  .cd-hero-slider li:nth-of-type(1) {
-    background-image: url("../images/bg/shipyard.jpg");
-  }
-  .cd-hero-slider li:nth-of-type(2) {
-    background-image: url("../images/bg/security.jpg");
-  }
-  .cd-hero-slider:hover li:nth-of-type(2){
-    background-color: #000;
-  }
-  .cd-hero-slider li:nth-of-type(3) {
-    background-image: url("../images/bg/hospital.jpeg");
-  }
-  /*removed c.cd-half-width*/
-  /*.cd-hero-slider .cd-full-width,
-  .cd-hero-slider{
-    padding-top: 150px;
-  }*/
-  .cd-hero-slider .cd-bg-video-wrapper {
-    display: block;
-  }
-  .cd-hero-slider .cd-half-width {
-    width: 45%;
-  }
-  .cd-hero-slider .cd-half-width:first-of-type {
-    left: 65%;
-  }
-  .cd-hero-slider .cd-half-width:nth-of-type(2) {
-    right: 5%;
-    left: auto;
-  }
-  .cd-hero-slider .cd-img-container {
-    display: block;
-  }
-  .cd-hero-slider h2, .cd-hero-slider p {
-    max-width: 520px;
-  }
-  .cd-hero-slider h2 {
-    font-size: 2.4em;
-    font-weight: 300;
-  }
-  .cd-hero-slider .cd-btn {
-    font-size: 1.4rem;
-  }
-}
+
+
 @media only screen and (min-width: 1170px) {
-  /*removed .cd-half-width*/
-  /*.cd-hero-slider .cd-full-width,
-  .cd-hero-slider {
-    padding-top: 220px;
-  }*/
   .cd-hero-slider h2, .cd-hero-slider p {
     margin-bottom: 20px;
   }
@@ -440,6 +338,9 @@ Single slide style
   .cd-hero-slider p {
     font-size: 1.6rem;
   }
+  .cd-hero-slider {
+    height: 680px;
+  }
 }
 
 /* --------------------------------
@@ -447,108 +348,7 @@ Single slide style
 Single slide animation
 
 -------------------------------- */
-@media only screen and (min-width: 768px) {
-  .cd-hero-slider .cd-half-width {
-    opacity: 0;
-    -webkit-transform: translateX(40px);
-    -moz-transform: translateX(40px);
-    -ms-transform: translateX(40px);
-    -o-transform: translateX(40px);
-    transform: translateX(40px);
-  }
-  .cd-hero-slider .move-left .cd-half-width {
-    -webkit-transform: translateX(-40px);
-    -moz-transform: translateX(-40px);
-    -ms-transform: translateX(-40px);
-    -o-transform: translateX(-40px);
-    transform: translateX(-40px);
-  }
-  .cd-hero-slider .selected .cd-half-width {
-    /* this is the visible slide */
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
-  .cd-hero-slider .is-moving .cd-half-width {
-    /* this is the slide moving outside the viewport
-    wait for the end of the transition on the <li> parent before set opacity to 0 and translate to 40px/-40px */
-    -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
-    -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
-    transition: opacity 0s 0.5s, transform 0s 0.5s;
-  }
-  .cd-hero-slider li.selected.from-left .cd-half-width:nth-of-type(2),
-  .cd-hero-slider li.selected.from-right .cd-half-width:first-of-type {
-    /* this is the selected slide - different animation if it's entering from left or right */
-    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
-    -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
-    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
-  }
-  .cd-hero-slider li.selected.from-left .cd-half-width:first-of-type,
-  .cd-hero-slider li.selected.from-right .cd-half-width:nth-of-type(2) {
-    /* this is the selected slide - different animation if it's entering from left or right */
-    -webkit-transition: opacity 0.4s 0.4s, -webkit-transform 0.5s 0.4s;
-    -moz-transition: opacity 0.4s 0.4s, -moz-transform 0.5s 0.4s;
-    transition: opacity 0.4s 0.4s, transform 0.5s 0.4s;
-  }
-  .cd-hero-slider .cd-full-width h2,
-  .cd-hero-slider .cd-full-width p,
-  .cd-hero-slider .cd-full-width .cd-btn {
-    opacity: 0;
-    -webkit-transform: translateX(100px);
-    -moz-transform: translateX(100px);
-    -ms-transform: translateX(100px);
-    -o-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-  .cd-hero-slider .move-left .cd-full-width h2,
-  .cd-hero-slider .move-left .cd-full-width p,
-  .cd-hero-slider .move-left .cd-full-width .cd-btn {
-    opacity: 0;
-    -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-  .cd-hero-slider .selected .cd-full-width h2,
-  .cd-hero-slider .selected .cd-full-width p,
-  .cd-hero-slider .selected .cd-full-width .cd-btn {
-    /* this is the visible slide */
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
-  .cd-hero-slider li.is-moving .cd-full-width h2,
-  .cd-hero-slider li.is-moving .cd-full-width p,
-  .cd-hero-slider li.is-moving .cd-full-width .cd-btn {
-    /* this is the slide moving outside the viewport
-    wait for the end of the transition on the li parent before set opacity to 0 and translate to 100px/-100px */
-    -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
-    -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
-    transition: opacity 0s 0.5s, transform 0s 0.5s;
-  }
-  .cd-hero-slider li.selected h2 {
-    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
-    -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
-    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
-  }
-  .cd-hero-slider li.selected p {
-    -webkit-transition: opacity 0.4s 0.3s, -webkit-transform 0.5s 0.3s;
-    -moz-transition: opacity 0.4s 0.3s, -moz-transform 0.5s 0.3s;
-    transition: opacity 0.4s 0.3s, transform 0.5s 0.3s;
-  }
-  .cd-hero-slider li.selected .cd-btn {
-    -webkit-transition: opacity 0.4s 0.4s, -webkit-transform 0.5s 0.4s, background-color 0.2s 0s;
-    -moz-transition: opacity 0.4s 0.4s, -moz-transform 0.5s 0.4s, background-color 0.2s 0s;
-    transition: opacity 0.4s 0.4s, transform 0.5s 0.4s, background-color 0.2s 0s;
-  }
-}
+
 /* --------------------------------
 
 Slider navigation
@@ -563,10 +363,6 @@ Slider navigation
   height: 55px;
   background-color: rgba(0, 1, 1, 0.5);
 }
-
-
-
-
 .cd-slider-nav nav, .cd-slider-nav ul, .cd-slider-nav li, .cd-slider-nav a {
   height: 100%;
 }
@@ -739,6 +535,196 @@ Slider navigation
   background-position: -96px -24px;
 }
 @media only screen and (min-width: 768px) {
+  .cd-hero-slider li:nth-of-type(1) {
+    background-image: url("../images/bg/shipyard.jpg");
+  }
+  .cd-hero-slider li:nth-of-type(2) {
+    background-image: url("../images/bg/security.jpg");
+  }
+  .cd-hero-slider:hover li:nth-of-type(2){
+    background-color: #000;
+  }
+  .cd-hero-slider li:nth-of-type(3) {
+    background-image: url("../images/bg/hospital.jpeg");
+  }
+  .cd-hero-slider .cd-bg-video-wrapper {
+    display: block;
+  }
+  .cd-hero-slider .cd-half-width {
+    width: 45%;
+  }
+  .cd-hero-slider .cd-half-width:first-of-type {
+    left: 65%;
+  }
+  .cd-hero-slider .cd-half-width:nth-of-type(2) {
+    right: 5%;
+    left: auto;
+  }
+  .cd-hero-slider .cd-img-container {
+    display: block;
+  }
+  .cd-hero-slider h2, .cd-hero-slider p {
+    max-width: 520px;
+  }
+  .cd-hero-slider h2 {
+    font-size: 2.4em;
+    font-weight: 300;
+  }
+  .cd-hero-slider .cd-btn {
+    font-size: 1.4rem;
+  }
+  .cd-hero-slider .cd-half-width {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+    transform: translateX(40px);
+  }
+  .cd-hero-slider .move-left .cd-half-width {
+    -webkit-transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    -o-transform: translateX(-40px);
+    transform: translateX(-40px);
+  }
+  .cd-hero-slider .selected .cd-half-width {
+    /* this is the visible slide */
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .cd-hero-slider .is-moving .cd-half-width {
+    /* this is the slide moving outside the viewport
+    wait for the end of the transition on the <li> parent before set opacity to 0 and translate to 40px/-40px */
+    -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
+    -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
+    transition: opacity 0s 0.5s, transform 0s 0.5s;
+  }
+  .cd-hero-slider li.selected.from-left .cd-half-width:nth-of-type(2),
+  .cd-hero-slider li.selected.from-right .cd-half-width:first-of-type {
+    /* this is the selected slide - different animation if it's entering from left or right */
+    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
+    -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
+    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
+  }
+  .cd-hero-slider li.selected.from-left .cd-half-width:first-of-type,
+  .cd-hero-slider li.selected.from-right .cd-half-width:nth-of-type(2) {
+    /* this is the selected slide - different animation if it's entering from left or right */
+    -webkit-transition: opacity 0.4s 0.4s, -webkit-transform 0.5s 0.4s;
+    -moz-transition: opacity 0.4s 0.4s, -moz-transform 0.5s 0.4s;
+    transition: opacity 0.4s 0.4s, transform 0.5s 0.4s;
+  }
+  .cd-hero-slider .cd-full-width h2,
+  .cd-hero-slider .cd-full-width p,
+  .cd-hero-slider .cd-full-width .cd-btn {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  .cd-hero-slider .move-left .cd-full-width h2,
+  .cd-hero-slider .move-left .cd-full-width p,
+  .cd-hero-slider .move-left .cd-full-width .cd-btn {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  .cd-hero-slider .selected .cd-full-width h2,
+  .cd-hero-slider .selected .cd-full-width p,
+  .cd-hero-slider .selected .cd-full-width .cd-btn {
+    /* this is the visible slide */
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .cd-hero-slider li.is-moving .cd-full-width h2,
+  .cd-hero-slider li.is-moving .cd-full-width p,
+  .cd-hero-slider li.is-moving .cd-full-width .cd-btn {
+    /* this is the slide moving outside the viewport
+    wait for the end of the transition on the li parent before set opacity to 0 and translate to 100px/-100px */
+    -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
+    -moz-transition: opacity 0s 0.5s, -moz-transform 0s 0.5s;
+    transition: opacity 0s 0.5s, transform 0s 0.5s;
+  }
+  .cd-hero-slider li.selected h2 {
+    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
+    -moz-transition: opacity 0.4s 0.2s, -moz-transform 0.5s 0.2s;
+    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
+  }
+  .cd-hero-slider li.selected p {
+    -webkit-transition: opacity 0.4s 0.3s, -webkit-transform 0.5s 0.3s;
+    -moz-transition: opacity 0.4s 0.3s, -moz-transform 0.5s 0.3s;
+    transition: opacity 0.4s 0.3s, transform 0.5s 0.3s;
+  }
+  .cd-hero-slider li.selected .cd-btn {
+    -webkit-transition: opacity 0.4s 0.4s, -webkit-transform 0.5s 0.4s, background-color 0.2s 0s;
+    -moz-transition: opacity 0.4s 0.4s, -moz-transform 0.5s 0.4s, background-color 0.2s 0s;
+    transition: opacity 0.4s 0.4s, transform 0.5s 0.4s, background-color 0.2s 0s;
+  }
+  .cd-primary-nav {
+    /* reset navigation values */
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  .cd-primary-nav ul {
+    position: static;
+    width: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    line-height: 70px;
+  }
+  .cd-primary-nav ul.is-visible {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .cd-primary-nav li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+  .cd-primary-nav a {
+    display: inline-block;
+    height: auto;
+    font-weight: 600;
+    line-height: normal;
+    background: transparent;
+    padding: .6em 1em;
+    border-top: none;
+  }
+  .cd-header {
+    height: 70px;
+    background-color: transparent;
+  }
+  .industrial-content {
+    width: 72%;
+  }
+  .security-content{
+    width: 72%;
+  }
+  .hospital-content{
+    width: 72%;
+  }
+  #cd-logo {
+    margin: 23px 0 0 5%;
+  }
   .cd-slider-nav {
     height: 80px;
   }
@@ -830,25 +816,28 @@ Javascript disabled
 	.cd-slider-nav .cd-marker {
 		width: 89px;
 		}
+    .hospital-content{
+      padding-top: 4em;
+      padding-left: 0;
+    }
+    .security-content{
+      padding-top: 4em;
+      padding-left: 0;
+    }
+    .industrial-content{
+      padding-top: 4em;
+    padding-left: 0;
+    }
+    .cd-hero-slider p {
+      font-size: 1.2em !important;
+      line-height: 1.2em;
+      text-align: justify;
+      font-family:'calibri';
+      color: #fff;
+      width: 81%;
+    }
+    .cd-hero {
+        height: 82%;
+    }
 
-}
-@media only screen and (max-width: 358px) {
-.cd-hero-slider {
-    height: 468px;
-}
-}
-@media only screen and (min-width:359px)and (max-width: 360px) {
-.cd-hero-slider {
-    height: 540px;
-}
-}
-@media only screen and (min-width:361px) and (max-width: 414px) {
-.cd-hero-slider {
-    height: 559px;
-}
-}
-@media only screen and (max-width: 767px) {
-.cd-hero-slider .cd-full-width, .cd-hero-slider .cd-half-width {
-   /*  top: 75px; */
-}
 }

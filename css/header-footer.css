@@ -110,6 +110,7 @@ font-size: 0.85em;
 padding: 0 15px 10px 0;
 text-transform: uppercase;
 font-weight: 600;
+bottom: 10px;
 }
 #home .navbar-nav.navbar-right li>a:hover {
 background-color: inherit;
@@ -248,9 +249,6 @@ min-width: 60px;
 	@media (min-width:768px) {
 	.container>.navbar-collapse{
 	width: 73%;
-	}
-	#home .navbar-nav.navbar-right>li a {
-	bottom: 10px;
 	}
 	}
 	@media (min-width:992px) {
