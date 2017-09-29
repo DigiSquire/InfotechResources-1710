@@ -339,74 +339,18 @@ img {
     -webkit-user-drag: none;
     user-drag: none;
 }
-a,
-a:hover,
-a:active,
-a:focus {
-    text-decoration: none;
-    outline: none;
-}
-a {
-    -webkit-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-}
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-p {
-    margin: 0 0 15px;
-}
-img {
-    max-width: 100%;
-}
 
-h3 {
-    font-weight: 300;
-    margin: 0;
-}
-h5 {
-    font-weight: 300;
-    margin: 0;
-    line-height: 2rem;
-}
-h3 {
-    font-weight: 300;
-    margin-bottom: .9rem;
-    font-size: 2.1rem;
-    line-height: 2.5rem;
-}
-h5 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-}
-h6 {
-    font-size: 1rem;
-    margin-bottom: .9rem;
-}
-p {
-    line-height: 1.5rem;
-    font-size: 1.1rem;
-}
-p:last-child {
-    margin-bottom: 0px;
-}
 .sections {
-    padding-top:100px;
     padding-bottom:100px;
     position: relative;
     overflow: hidden;
 }
 .gallery-item h6{
-	background:#4b4c4e;
-	color:#4bcaff;
+	background:rgba(51, 51, 51, 0.88);
+	color:#fff;
 	padding:12px 0;
 	font-size:15px;
-	text-transform:uppercase;
+	text-transform:capitalize;
 	margin-top:0;
 	border-radius:0px 0px 10px 10px;
 	-webkit-border-radius:0px 0px 10px 10px;
@@ -426,11 +370,11 @@ p:last-child {
 	-ms-border-radius:10px 10px 0px 0px;
 }
 .img-overlay{
-	background:rgba(83,160,192, .9);
+	background:rgba(218, 37, 28, 0.6);
 	position:absolute;
 	width: 100%;
-    height: 79%;
-    top: -90%;
+  height: 81%;
+  top: -90%;
 	transition:.5s;
 }
 .gallery:hover .img-overlay{
@@ -438,10 +382,9 @@ p:last-child {
 }
 
 .gallery-icon a{
-	font-size:15px;
+  font-size: 31px;
+  padding: 0.5em;
 	color:#fff;
-	text-transform:uppercase;
-	transition:.3s;
 }
 .gallery-icon:hover a{
 	color:#c9c9c9;
@@ -462,7 +405,7 @@ p:last-child {
 @media  (max-width: 991px) {
 
    .img-overlay {
-    height: 83%;
+    height: 85%;
    }
    .gallery-item {
 	margin-bottom:40px;
@@ -474,7 +417,7 @@ p:last-child {
 @media (max-width: 767px) {
 
 	.img-overlay {
-    height: 91%;
+    height: 85%;
    }
 	.gallery:hover  .gallery-icon{
 	bottom:50%;
@@ -690,53 +633,83 @@ p:last-child {
 
         <div class="heading-content">
             <h3>In The News</h3>
-            <h5>summarise what your product is all about </h5>
         </div>
 
         <!-- Example row of columns -->
         <div class="row">
 
-            <div class="col-md-3 col-sm-6 col-xs-12" style="left: 37%;">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="gallery-item">
                     <div class="gallery">
-                        <img src="images/gallery/315.jpg" alt="" />
-                        <h6>My Gallery 1</h6>
+                        <img src="images/gallery/1-thumb.jpg" alt="" />
+                        <h6>TOI 2015</h6>
 
                         <div class="img-overlay"></div>
 
                         <div class="gallery-icon">
-
-                            <a class="gallery-img" href="images/gallery/1.jpg" title="Walk Dont run">View More</a>
-                              <a class="gallery-img" href="images/gallery/2.jpg"></a>
-                                <a class="gallery-img" href="images/gallery/3.jpg"></a>
-                                  <a class="gallery-img" href="images/gallery/Picture1.jpg"></a>
+                            <a class="gallery-img" href="images/gallery/1.jpg" title="Walk Dont run"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                         </div>
+                    </div>
+                    <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="gallery-item">
+                    <div class="gallery">
+                        <img src="images/gallery/2-thumb.jpg" alt="" />
+                        <h6>Disaster Alarm Deployed</h6>
+
+                        <div class="img-overlay"></div>
+
+                        <div class="gallery-icon">
+                            <a class="gallery-img" href="images/gallery/2.jpg" title="Disaster Alarm Deployed"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+
+                    <p>The company developed Disaster Alarm System immediately after devastating tsunami which was installed at Nuclear Power Station, Kalpakam.</p>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="gallery-item">
+                    <div class="gallery">
+                        <img src="images/gallery/3-thumb.jpg" alt="" />
+                        <h6>Range System</h6>
+
+                        <div class="img-overlay"></div>
+
+                        <div class="gallery-icon">
+                            <a class="gallery-img" href="images/gallery/3.jpg" title="Laser Range System"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                        </div>
+
                     </div>
 
                     <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
 
                 </div>
             </div>
-
-            <!-- <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="gallery-item">
                     <div class="gallery">
-                        <img src="images/gallery/3.png" alt="" />
-                        <h6>My Gallery 2</h6>
+                        <img src="images/gallery/4-thumb.jpg" alt="" />
+                        <h6>Range System Launch</h6>
 
                         <div class="img-overlay"></div>
 
                         <div class="gallery-icon">
-                            <a class="gallery-img" href="images/gallery/1.png">View More</a>
+                            <a class="gallery-img" href="images/gallery/4.jpg" title="Range System Launch"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
                         </div>
 
                     </div>
 
-                    <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+                    <p>The company's first main product , SmartRange - laser based shooting was launched at the hands of Dr. P. C. Alexander then Governor of Maharashtra. We had won patent for this product.
+                    </p>
 
                 </div>
-            </div> -->
-
+            </div>
 
 
         </div>
