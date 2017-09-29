@@ -24,6 +24,7 @@
       <!-- DD style -->
       <link rel="stylesheet" href="css/products-dd.css">
       <link rel="stylesheet" href="css/slider.css">
+      <link rel="stylesheet" href="css/magnific-popup.css">
       <script src="js/modernizr.js"></script> <!-- Modernizr -->
       <!-- Google Web Fonts  -->
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
@@ -328,6 +329,162 @@
          min-height:47.9em;
          }
          }
+
+/*gallery Setion*/
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+a {
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+p {
+    margin: 0 0 15px;
+}
+img {
+    max-width: 100%;
+}
+
+h3 {
+    font-weight: 300;
+    margin: 0;
+}
+h5 {
+    font-weight: 300;
+    margin: 0;
+    line-height: 2rem;
+}
+h3 {
+    font-weight: 300;
+    margin-bottom: .9rem;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+}
+h5 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+h6 {
+    font-size: 1rem;
+    margin-bottom: .9rem;
+}
+p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+p:last-child {
+    margin-bottom: 0px;
+}
+.sections {
+    padding-top:100px;
+    padding-bottom:100px;
+    position: relative;
+    overflow: hidden;
+}
+.gallery-item h6{
+	background:#4b4c4e;
+	color:#4bcaff;
+	padding:12px 0;
+	font-size:15px;
+	text-transform:uppercase;
+	margin-top:0;
+	border-radius:0px 0px 10px 10px;
+	-webkit-border-radius:0px 0px 10px 10px;
+	-moz-border-radius:0px 0px 10px 10px;
+	-ms-border-radius:0px 0px 10px 10px;
+}
+.gallery img{
+	width:100%;
+}
+.gallery{
+	position:relative;
+	margin-bottom:10px;
+	overflow:hidden;
+	border-radius:10px 10px 0px 0px;
+	-webkit-border-radius:10px 10px 0px 0px;
+	-moz-border-radius:10px 10px 0px 0px;
+	-ms-border-radius:10px 10px 0px 0px;
+}
+.img-overlay{
+	background:rgba(83,160,192, .9);
+	position:absolute;
+	width: 100%;
+    height: 79%;
+    top: -90%;
+	transition:.5s;
+}
+.gallery:hover .img-overlay{
+	top:0;
+}
+
+.gallery-icon a{
+	font-size:15px;
+	color:#fff;
+	text-transform:uppercase;
+	transition:.3s;
+}
+.gallery-icon:hover a{
+	color:#c9c9c9;
+}
+
+.gallery-icon{
+	position:absolute;
+	color:red;
+	z-index:1;
+	transition:.5s;
+	-webkit-transition:.5s;
+}
+.gallery:hover  .gallery-icon{
+	bottom:50%;
+	left:35%;
+}
+/* Portrait tablets and small desktops */
+@media  (max-width: 991px) {
+
+   .img-overlay {
+    height: 83%;
+   }
+   .gallery-item {
+	margin-bottom:40px;
+	}
+
+
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+	.img-overlay {
+    height: 91%;
+   }
+	.gallery:hover  .gallery-icon{
+	bottom:50%;
+	left:43%;
+	}
+
+
+
+
+}
       </style>
    </head>
    <body>
@@ -526,7 +683,70 @@
             </div>
          </section>
          <!--/#services-->
+         <!-- In the news -->
+         <!-- Sections -->
+<section id="gallery" class="sections">
+    <div class="container text-center">
+
+        <div class="heading-content">
+            <h3>In The News</h3>
+            <h5>summarise what your product is all about </h5>
+        </div>
+
+        <!-- Example row of columns -->
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 col-xs-12" style="left: 37%;">
+                <div class="gallery-item">
+                    <div class="gallery">
+                        <img src="images/gallery/315.jpg" alt="" />
+                        <h6>My Gallery 1</h6>
+
+                        <div class="img-overlay"></div>
+
+                        <div class="gallery-icon">
+
+                            <a class="gallery-img" href="images/gallery/1.jpg" title="Walk Dont run">View More</a>
+                              <a class="gallery-img" href="images/gallery/2.jpg"></a>
+                                <a class="gallery-img" href="images/gallery/3.jpg"></a>
+                                  <a class="gallery-img" href="images/gallery/Picture1.jpg"></a>
+                        </div>
+                    </div>
+
+                    <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+
+                </div>
+            </div>
+
+            <!-- <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="gallery-item">
+                    <div class="gallery">
+                        <img src="images/gallery/3.png" alt="" />
+                        <h6>My Gallery 2</h6>
+
+                        <div class="img-overlay"></div>
+
+                        <div class="gallery-icon">
+                            <a class="gallery-img" href="images/gallery/1.png">View More</a>
+                        </div>
+
+                    </div>
+
+                    <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+
+                </div>
+            </div> -->
+
+
+
+        </div>
+    </div> <!-- /container -->
+</section>
+
+      <!-- in the news end -->
       </div>
+
+
       <!-- Footer Start -->
       <footer style="padding-top:40px;"  class="footer-section">
          <div class="container">
@@ -560,10 +780,11 @@
       <!-- All Javascript Plugins  -->
       <script type="text/javascript" src="js/jquery.min.js"></script>
       <script type="text/javascript" src="js/bocg.js"></script>
+      <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
       <!-- Main Javascript File  -->
-      <script type="text/javascript" src="js/home.js"></script>
-      <script src="js/jquery.menu-aim.js"></script>
-      <script src="js/menu.js"></script>
-      <script src="js/slider.js"></script>
+      <script type="text/javascript" src="js/about.js"></script>
+      <script type="text/javascript" src="js/jquery.menu-aim.js"></script>
+      <script type="text/javascript" src="js/menu.js"></script>
+      <script type="text/javascript" src="js/slider.js"></script>
    </body>
 </html>
