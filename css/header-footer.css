@@ -2,6 +2,19 @@
 .home-section {
 height: 100%;
 }
+#home .header-connect a{
+	color: #333;
+	text-decoration: none;
+}
+#home .header-connect a:hover{
+	color: #555;;
+	text-decoration: none;
+}
+#home .header-connect  a:focus {
+	outline: none;
+	color:#333;
+	text-decoration: none;
+}
 /*custom hover effects*/
 .custom-hover-effects a {
 padding: 0 0 12px;
