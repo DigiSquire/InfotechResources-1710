@@ -246,6 +246,14 @@ min-width: 60px;
 		color: #999;
 		float: right;
 	}
+	.footer-ds a{
+		font-size: 11px;
+		color: #999;
+	}
+	.footer-ds a:hover{
+		font-size: 11px;
+		color: #fff;
+	}
 	@media only screen and (max-width:767px){
 	.footer-ds{
 	float: left;
