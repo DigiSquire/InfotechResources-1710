@@ -166,18 +166,20 @@ Slider
   -moz-transition: -moz-transform 0.5s;
   transition: transform 0.5s;
 }
+
 @media only screen and (min-width: 768px) and (max-width:1400px) {
-  .cd-hero-slider {
-    position: relative;
-    height: 100%;
-    overflow: hidden;
-  }
-  .cd-hero {
+  #slider {
     height: 90%;
     position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  .cd-hero-slider {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+
   .hospital-content{
     height: 91.5%;
     right: 22%;
