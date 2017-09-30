@@ -22,19 +22,6 @@
 		$(window).on('load', function () {
 			$('body').addClass('loaded');
 		});
-		//script for contact-us page start
-		$(window).on('load', function () {
-			$('#eId').addClass('email-load');
-		});
-		$("#email1").focus(function(){
-			$('#eId').removeClass('email-load');
-    });
-		$('#email1').blur(function()
-		{
-			if(!$(this).val() ) {
-				  $('#eId').addClass('email-load');
-			}
-		});
 		/* Mobile Navigation Hide or Collapse on Click */
 		$(document).on('click', '.navbar-collapse.in', function (e) {
 			if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
@@ -60,7 +47,6 @@
            refreshInterval: 50
            })
            });
-
 					 /*---------------------------------------------*
 					      * Gallery Pop Up Animation
 					      ---------------------------------------------*/
@@ -87,20 +73,6 @@
  tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
 }
 					     });
-		/* Google Map */
-		 $('#my-address').gMap({
-		    zoom: 5,
-		    scrollwheel: true,
-		    maptype: 'ROADMAP',
-		    markers:[
-		   {
-		    address: "103,Chitrakoot Apartments,Model Colony, Shivajinagar, Pune, Maharashtra 411053",  /* You can change your address from here */
-		     html: "<b>Address</b>: <br>103,Chitrakoot,Chatushringi Road,Model Colony,Pune,Maharashtra,India 411053",   /* You can change display address text from here */
-		     popup: true
-		    }
-		    ]
-		    });
-
 
 	});
 

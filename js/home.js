@@ -47,35 +47,6 @@
 
 		});
 
-        /* Statistics Counter */
-
-        $('.statistics').appear(function() {
-           var counter = $(this).find('.statistics-count');
-           var toCount = counter.data('count');
-
-           $(counter).countTo({
-           from: 0,
-           to: toCount,
-           speed: 5000,
-           refreshInterval: 50
-           })
-           });
-
-		/* Google Map */
-		 $('#my-address').gMap({
-		    zoom: 5,
-		    scrollwheel: true,
-		    maptype: 'ROADMAP',
-		    markers:[
-		   {
-		    address: "103,Chitrakoot Apartments,Model Colony, Shivajinagar, Pune, Maharashtra 411053",  /* You can change your address from here */
-		     html: "<b>Address</b>: <br>103,Chitrakoot,Chatushringi Road,Model Colony,Pune,Maharashtra,India 411053",   /* You can change display address text from here */
-		     popup: true
-		    }
-		    ]
-		    });
-
-
 	});
 
 })(jQuery);
