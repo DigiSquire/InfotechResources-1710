@@ -153,13 +153,13 @@ h2, h3 {
 			transition: all 0.6s ease 0s;
 }
 
-.og-grid .mix a:hover img {
+/*.og-grid .mix a:hover img {
 	-webkit-transform: scale(1.4) rotate(15deg);
 	   -moz-transform: scale(1.4) rotate(15deg);
 		-ms-transform: scale(1.4) rotate(15deg);
 		 -o-transform: scale(1.4) rotate(15deg);
 			transform: scale(1.4) rotate(15deg);
-}
+}*/
 
 .hover-mask {
     top: 0;
@@ -206,7 +206,7 @@ h2, h3 {
 	width: 50px;
 }
 
-.og-grid .mix a:hover .hover-mask {
+.og-grid .mix  .hover-mask {
 	opacity: 1;
 	filter: alpha(opacity=100);
 

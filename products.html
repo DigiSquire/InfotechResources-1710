@@ -175,6 +175,9 @@
          .row {
          margin-right: 0px;
          }
+         .og-grid li {
+    width: 72%;
+}
          }
          .padding-top {
          padding-top: 90px;
@@ -216,7 +219,16 @@
          background-size: cover;
          }
 
-
+         #list-elem li{
+           display: list-item;
+           list-style: disc;
+margin: 0;
+padding: 0;
+border: 0;
+height: 100%;
+width: 100%;
+text-align: justify;
+         }
       </style>
    </head>
    <body>
@@ -270,18 +282,18 @@
                                        </ul>
                                     </li>
                                     <li class="has-children">
+                                       <a>Security Devices</a>
+                                       <ul class="is-hidden">
+                                          <li class="go-back"><a href="#0">Products</a></li>
+                                          <li><a href="products.html">Dwarpal</a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="has-children">
                                        <a>Wireless relay boards</a>
                                        <ul class="is-hidden">
                                           <li class="go-back"><a href="#0">Products</a></li>
                                           <li><a href="products.html">Four Relay Board</a></li>
                                           <li><a href="products.html">Twelve Relay Board</a></li>
-                                       </ul>
-                                    </li>
-                                    <li class="has-children">
-                                       <a>Security Devices</a>
-                                       <ul class="is-hidden">
-                                          <li class="go-back"><a href="#0">Products</a></li>
-                                          <li><a href="products.html">Dwarpal</a></li>
                                        </ul>
                                     </li>
                                     <li class="has-children">
@@ -334,7 +346,7 @@
 
         <!-- section title -->
         <div class="title text-center">
-          <h2>Our <span class="color">Works</span></h2>
+          <h2>Our <span class="color">Products</span></h2>
           <div class="border"></div>
         </div>
         <!-- /section title -->
@@ -344,8 +356,8 @@
           <ul class="text-center">
               <li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
             <li><a href="javascript:void(0)" class="filter" data-filter=".hospital">Hospital Equipments</a></li>
-            <li><a href="javascript:void(0)" class="filter" data-filter=".wireless">Wireless relay boards</a></li>
-            <li><a href="javascript:void(0)" class="filter" data-filter=".security">Security Devices</a></li>
+            <li><a href="javascript:void(0)" class="filter" data-filter=".wireless">Security Devices</a></li>
+            <li><a href="javascript:void(0)" class="filter" data-filter=".security">Wireless relay boards</a></li>
             <li><a href="javascript:void(0)" class="filter" data-filter=".ndt">NDT testing</a></li>
           </ul>
         </div>
@@ -360,8 +372,9 @@
             <ul id="og-grid" class="og-grid">
 
       <!-- single portfolio item -->
-      <li class="mix hospital">
-        <a href="brochures/all-hospital-products.pdf" data-largesrc="images/portfolio/led-x-ray-viewer-500x500.jpg" data-title="Approx Price: Rs 6,500 / Number" data-description="<p>Leveraging on our extensive market knowledge, we are providing a high quality range of LED X Ray Viewer.</p>">
+      <li id="list-elem"class="mix hospital">
+        <a href="brochures/all-hospital-products.pdf" data-largesrc="images/portfolio/led-x-ray-viewer-500x500.jpg" data-title="Price: Rs 6,500 / Unit" data-description="<b>Features</b><ul><li>Elegant looks</li><li>Plug-n-play for Operation Theaters</li><li>All controls enclosed inside the viewer</li><li>Power saving through use of LED instead of tubes
+        or lamps</li><li>Snap–On sensors switch the LED ON only when X-ray is present</li><li>Uniform dispersion of light ensuring best viewing experience</li><li>Light intensity control via dimmer and remote</li><li>For double and triple sized viewers, individual x-ray viewing area On-Off option</li><li>Very long life without need of lamp replacement</li><li>Uniform dispersion of light ensuring best viewing experience</li><li>Light intensity control via dimmer and remote</li></ul>">
           <img src="images/portfolio/led-x-ray-viewer-500x500.jpg" alt="LED X Ray Viewer From Infotech Resources">
           <div class="hover-mask">
             <h3>LED X Ray Viewer</h3>
@@ -372,50 +385,6 @@
         </a>
       </li>
       <!-- /single portfolio item -->
-
-      <!-- single portfolio item -->
-      <li class="mix wireless">
-        <a href="javascript:void(0)" data-largesrc="images/portfolio/four-relay-board-500x500.jpg" data-title="Approx Price: Rs 1,500 / Piece" data-description="Owing to the efforts of our dedicated team of professionals, we have been constantly engaged in offering the best quality Four Relay Board.">
-          <img src="images/portfolio/four-relay-board-500x500.jpg" alt="Four Relay Board From Infotech Resources">
-          <div class="hover-mask">
-            <h3>Four Relay Board</h3>
-            <span>
-              <i class="fa fa-plus fa-2x"></i>
-            </span>
-          </div>
-        </a>
-      </li>
-      <!-- /single portfolio item -->
-
-      <!-- single portfolio item -->
-      <li class="mix security">
-        <a href="brochures/dwarpal-brochure.pdf"  data-largesrc="images/portfolio/dwarpal.jpg" data-title="Approx Price: Rs 2,200 / Piece" data-description="<p>Keeping in sync with the latest market norms and policies, we are indulged in providing a high quality range of Security Door Alarm System.</p>">
-          <img src="images/portfolio/dwarpal.jpg" alt="Home Security Device Dwarpal From Infotech Resources">
-          <div class="hover-mask">
-            <h3>Dwarpal</h3>
-            <span>
-              <i class="fa fa-plus fa-2x"></i>
-            </span>
-          </div>
-        </a>
-      </li>
-      <!-- /single portfolio item -->
-
-      <!-- single portfolio item -->
-      <li class="mix ndt">
-        <a href="javascript:void(0)" data-largesrc="images/portfolio/rt-ndt.jpg" data-title="Approx Price: Rs 12,000 / Piece" data-description="<p>Infotech Resources has designed and developed a Radiographic Testing product for NDT</p><p>This is a low-cost, high-performance viewer perfect for industrial use
-</p>">
-          <img src="images/portfolio/rt-ndt.jpg" alt="RT NDT Viewer by Infotech Resources">
-          <div class="hover-mask">
-            <h3>RT NDT Viewer</h3>
-            <span>
-              <i class="fa fa-plus fa-2x"></i>
-            </span>
-          </div>
-        </a>
-      </li>
-      <!-- /single portfolio item -->
-
       <!-- single portfolio item -->
       <li class="mix hospital">
         <a href="brochures/wi-token.jpg"  data-largesrc="images/portfolio/wi-token-system-500x500.jpg" data-title="Approx Price: Rs 10,500 / Piece" data-description="Under the meticulous supervision of our skilled professionals, we are providing a high quality range of Wi Token System.">
@@ -442,14 +411,12 @@
           </div>
         </a>
       </li>
-      <!-- /single portfolio item -->
-
-      <!-- single portfolio item -->
-      <li class="mix wireless">
-        <a href="javascript:void(0)" data-largesrc="images/portfolio/twelve-relay-board-500x500.jpg" data-title="Approx Price: Rs 3,500 / Piece" data-description="We are remarkable enterprise, involved in offering superior quality Twelve Relay Board.">
-          <img src="images/portfolio/twelve-relay-board-500x500.jpg" alt="Twelve Relay Board From Infotech Resources">
+    <!-- single portfolio item -->
+      <li class="mix security">
+        <a href="brochures/dwarpal-brochure.pdf"  data-largesrc="images/portfolio/dwarpal.jpg" data-title="Approx Price: Rs 2,200 / Piece" data-description="<p>Keeping in sync with the latest market norms and policies, we are indulged in providing a high quality range of Security Door Alarm System.</p>">
+          <img src="images/portfolio/dwarpal.jpg" alt="Home Security Device Dwarpal From Infotech Resources">
           <div class="hover-mask">
-            <h3>Twelve Relay Board</h3>
+            <h3>Dwarpal</h3>
             <span>
               <i class="fa fa-plus fa-2x"></i>
             </span>
@@ -457,6 +424,51 @@
         </a>
       </li>
       <!-- /single portfolio item -->
+      <!-- single portfolio item -->
+      <li class="mix wireless">
+        <a href="javascript:void(0)" data-largesrc="images/portfolio/four-relay-board-500x500.jpg" data-title="Approx Price: Rs 1,500 / Piece" data-description="Owing to the efforts of our dedicated team of professionals, we have been constantly engaged in offering the best quality Four Relay Board.">
+          <img src="images/portfolio/four-relay-board-500x500.jpg" alt="Four Relay Board From Infotech Resources">
+          <div class="hover-mask">
+            <h3>Four Relay Board</h3>
+            <span>
+              <i class="fa fa-plus fa-2x"></i>
+            </span>
+          </div>
+        </a>
+      </li>
+      <!-- /single portfolio item -->
+
+            <!-- single portfolio item -->
+            <li class="mix wireless">
+              <a href="javascript:void(0)" data-largesrc="images/portfolio/twelve-relay-board-500x500.jpg" data-title="Approx Price: Rs 3,500 / Piece" data-description="We are remarkable enterprise, involved in offering superior quality Twelve Relay Board.">
+                <img src="images/portfolio/twelve-relay-board-500x500.jpg" alt="Twelve Relay Board From Infotech Resources">
+                <div class="hover-mask">
+                  <h3>Twelve Relay Board</h3>
+                  <span>
+                    <i class="fa fa-plus fa-2x"></i>
+                  </span>
+                </div>
+              </a>
+            </li>
+            <!-- /single portfolio item -->
+      <!-- single portfolio item -->
+      <li class="mix ndt">
+        <a href="javascript:void(0)" data-largesrc="images/portfolio/rt-ndt.jpg" data-title="Approx Price: Rs 12,000 / Piece" data-description="<p>Infotech Resources has designed and developed a Radiographic Testing product for NDT</p><p>This is a low-cost, high-performance viewer perfect for industrial use
+</p>">
+          <img src="images/portfolio/rt-ndt.jpg" alt="RT NDT Viewer by Infotech Resources">
+          <div class="hover-mask">
+            <h3>RT NDT Viewer</h3>
+            <span>
+              <i class="fa fa-plus fa-2x"></i>
+            </span>
+          </div>
+        </a>
+      </li>
+      <!-- /single portfolio item -->
+
+
+      <!-- /single portfolio item -->
+
     </ul> <!-- end og grid -->
   </div>  <!-- portfolio items wrapper -->
 

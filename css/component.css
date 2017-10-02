@@ -15,7 +15,7 @@
 	margin: 0 0 3px 0;
 	vertical-align: top;
 	height: 250px;
-    width: 300px;
+    width: 25%;
 }
 
 .og-grid li > a,
@@ -55,9 +55,9 @@
 }
 
 .og-expander-inner {
-	padding: 50px 30px;
+	padding: 0px 30px;
 	height: 100%;
-    color: #ddd;
+    color: #333;
 }
 
 .og-close {
@@ -66,6 +66,7 @@
 	height: 40px;
 	top: 20px;
 	right: 20px;
+	    z-index: 9999999;
 	cursor: pointer;
 }
 
