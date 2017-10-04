@@ -65,6 +65,76 @@
   h3{
     font-size: 18px;
   }*/
+  /*From html*/
+  .title h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 38px;
+  color: rgba(204, 0, 0, 0.83);
+  margin-top: 2em;
+  }
+  .title .color {
+  color: #000;
+  }
+  .product-content table  > tbody > tr > td:first-of-type {
+  border-right: 1px solid #d1d0d0;
+  }
+  .product-content table >tbody > tr > td {vertical-align: top;
+  padding: 2px 4px 4px 8px;
+  line-height: 29px;
+  text-align: left;}
+  .product-content table > tbody > tr > td {
+  border-bottom: 1px solid #d1d0d0;
+  }
+  .product-content table> tbody > tr:last-of-type > td {
+  border-bottom: none;
+  }
+  #blog-details  ul,li{
+  list-style: disc;
+  float: none;
+  margin: 5px 0 0 0;
+  }
+  .t2 table td, .t2 table th {
+  border: #cacaca 1px solid;
+  font-weight: 300;
+  vertical-align: top;
+  padding: 8px 4px 8px 8px;
+  line-height: 29px;
+  text-align: left;
+  }
+  .post-thumb   img {
+  max-width: 500px;
+  max-height: 450px;
+  border: 1px solid #cacaca ;
+  }
+  .dwnld  {
+  font-size: 16px;
+  color: #fff;
+  background-color: #f82f53;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  border-radius: 1.25em;
+  display: inline-block;
+  margin: 26px 0 0;
+  outline: none;
+  }
+  .margin-top{
+    margin-top: 2em;
+  }
+  .title h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 23px;
+  color: rgba(204, 0, 0, 0.83);
+  }
+  .shift-cell{
+list-style: disc;
+margin-left: 28px;
+  }
+  .sidebar img{
+    max-width: 52px;
+    max-height: 52px;
+  }
 
   .overflow{
     overflow: hidden;
@@ -85,7 +155,6 @@
 
 
 .sidebar h3 {
-  color: #404040;
   margin-top: 0;
   border-bottom: 2.2px solid rgba(204, 0, 0, 0.83);
   margin-bottom: 6px;
@@ -304,7 +373,7 @@ Blog Default
 }
 
 .post-title {
-  margin-top: 1em;
+  margin-top: 3.5em;
   color: #333;
 }
 
