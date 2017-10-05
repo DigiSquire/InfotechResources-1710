@@ -66,6 +66,9 @@
     font-size: 18px;
   }*/
   /*From html*/
+  .back-layer{
+    background-color: rgba(255, 255, 255, 0.94);
+  }
   .title h2 {
   text-transform: uppercase;
   font-weight: 700;
@@ -96,7 +99,7 @@
   }
   .t2 table td, .t2 table th {
   border: #cacaca 1px solid;
-  font-weight: 300;
+  font-weight: 400;
   vertical-align: top;
   padding: 8px 4px 8px 8px;
   line-height: 29px;
@@ -151,6 +154,12 @@ margin-left: 28px;
   .padding-top{
     padding-top: 90px;
   }
+  .padding-bottom{
+        padding-bottom: 75px;
+  }
+   .padding-left{
+       padding-left: 2.5em;
+     }
 
 
 
