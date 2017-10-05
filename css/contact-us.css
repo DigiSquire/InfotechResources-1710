@@ -14,7 +14,7 @@ Form
 .cd-form {
  width: 90%;
     max-width: 600px;
-    margin: 1em 1em 0em 1em;
+    margin: 1em 1em 0em 4em;
 }
 .cd-form::after {
   clear: both;
@@ -388,3 +388,8 @@ FLoating labels
     top: 20px;
   }
 }
+.span_1_of_3 {
+    padding: 1.5%;
+	margin: 1% 0 1% 1.6%;
+}
+
