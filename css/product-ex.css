@@ -133,12 +133,38 @@
   .shift-cell{
 list-style: disc;
 margin-left: 28px;
+font-size: 1.6rem;
+    font-weight: 400;
+        text-align: justify;
   }
   .sidebar img{
     max-width: 52px;
     max-height: 52px;
   }
-
+  /*Tabs styling*/
+  .tab-content {
+    padding-top: 20px;
+  }
+  .page-header{
+    margin-top: 3em;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 400;
+      line-height: 1.4em;
+      border: none
+  }
+  .nav-tabs>li>a {
+      color: #333;
+      border: 1px solid transparent ;
+          font-weight: 600;
+  }
+  .nav-tabs>li>a:hover {
+      border-color: transparent;
+  }
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+      color: rgba(204, 0, 0, 0.83);
+  }
+  /*Tabs styling*/
   .overflow{
     overflow: hidden;
   }
@@ -187,6 +213,7 @@ margin-left: 28px;
   color: #6a6a6a;
   padding: 8px 0;
   padding-left: 0;
+  font-weight: 400;
 }
 
 .categories .navbar-stacked li a:hover{
@@ -382,8 +409,9 @@ Blog Default
 }
 
 .post-title {
-  margin-top: 3.5em;
+  margin-top: 0;
   color: #333;
+  font-size: 1.6em;
 }
 
 .post-title a{
