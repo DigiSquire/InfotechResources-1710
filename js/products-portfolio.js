@@ -28,15 +28,53 @@
 				$(this).collapse('hide');
 			}
 		});
+		// scroll
 		$('body').scrollspy({
 			target: '.navbar-collapse',
 			offset: 195
 		});
+		// set filter for product page
 		$('.p-nav').click(function(event) {
 			event.preventDefault();
 			var name = $(this).data('title');
 			window.location = 'products.html?market=' + name;
 			});
+	
+		// Custom PortFolio Filtering
+		$(window).on('load', function () {
+			function loadPageVar(sVar) {
+				return decodeURI(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURI(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+			};
+			var desiredMarket=loadPageVar('market');
+			if (desiredMarket != "") {
+				$(function () {
+					if (desiredMarket=="hospitals"){
+						$('#og-grid').mixItUp({
+				    load: {
+				      filter: '.hospital'
+				    }
+				  });
+					}
+					if (desiredMarket=="security"){
+						$('#og-grid').mixItUp({
+				    load: {
+				      filter: '.security'
+				    }
+				  });
+					}
+					if (desiredMarket=="industrial"){
+						$('#og-grid').mixItUp({
+				    load: {
+				      filter: '.industrial'
+				    }
+				  });
+					}
+				});
+			}else {
+				$('#og-grid').mixItUp();
+			};
+		});
+		Grid.init(); //Portfolio Grid Expand
 
 	});
 

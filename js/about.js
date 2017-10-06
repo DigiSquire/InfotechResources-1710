@@ -8,10 +8,9 @@
    Table Of Content
 
    1. Preloader
-   2. Script for contact-us page css
-   3. Script to Activate the Carousel
-   4. Mobile Navigation Hide or Collapse on Click
-   5. Google Map
+   2. Mobile Navigation Hide or Collapse on Click
+	 3. Statistics Counter
+	 4. Gallery Pop Up Animation
 */
 
 (function ($) {
@@ -33,9 +32,13 @@
 			offset: 195
 
 		});
-
+		// set filter for product page
+		$('.p-nav').click(function(event) {
+			event.preventDefault();
+			var name = $(this).data('title');
+			window.location = 'products.html?market=' + name;
+			});
         /* Statistics Counter */
-
         $('.statistics').appear(function() {
            var counter = $(this).find('.statistics-count');
            var toCount = counter.data('count');
@@ -47,10 +50,7 @@
            refreshInterval: 50
            })
            });
-					 /*---------------------------------------------*
-					      * Gallery Pop Up Animation
-					      ---------------------------------------------*/
-
+					//  Gallery Pop Up Animation
 					     $('.gallery-img').magnificPopup({
 					         type: 'image',
 					         gallery: {

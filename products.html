@@ -350,8 +350,9 @@
                            <li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
                            <li><a href="javascript:void(0)" class="filter" data-filter=".hospital">Hospital Equipments</a></li>
                            <li><a href="javascript:void(0)" class="filter" data-filter=".security">Security Devices</a></li>
-                           <li><a href="javascript:void(0)" class="filter" data-filter=".wireless">Wireless relay boards</a></li>
-                           <li><a href="javascript:void(0)" class="filter" data-filter=".ndt">NDT testing</a></li>
+                           <li><a href="javascript:void(0)" class="filter" data-filter=".industrial">Industrial Devices</a></li>
+                           <!-- <li><a href="javascript:void(0)" class="filter" data-filter=".wireless">Wireless relay boards</a></li>
+                           <li><a href="javascript:void(0)" class="filter" data-filter=".ndt">NDT testing</a></li> -->
                         </ul>
                      </div>
                      <!-- /portfolio item filtering -->
@@ -417,7 +418,7 @@
                   </li>
                   <!-- /single portfolio item -->
                   <!-- single portfolio item -->
-                  <li class="mix wireless">
+                  <li class="mix industrial">
                      <a href="Four-Relay-Board.html" data-largesrc="images/portfolio/four-relay-board-500x500.jpg" data-title="Approx Price: Rs 1,500 / Piece" data-description="Owing to the efforts of our dedicated team of professionals, we have been constantly engaged in offering the best quality Four Relay Board.">
                         <img src="images/portfolio/four-relay-board-500x500.jpg" alt="Four Relay Board From Infotech Resources">
                         <div class="hover-mask">
@@ -430,7 +431,7 @@
                   </li>
                   <!-- /single portfolio item -->
                   <!-- single portfolio item -->
-                  <li class="mix wireless">
+                  <li class="mix industrial">
                      <a href="Twelve-Relay-Board.html" data-largesrc="images/portfolio/twelve-relay-board-500x500.jpg" data-title="Approx Price: Rs 3,500 / Piece" data-description="We are remarkable enterprise, involved in offering superior quality Twelve Relay Board.">
                         <img src="images/portfolio/twelve-relay-board-500x500.jpg" alt="Twelve Relay Board From Infotech Resources">
                         <div class="hover-mask">
@@ -443,7 +444,7 @@
                   </li>
                   <!-- /single portfolio item -->
                   <!-- single portfolio item -->
-                  <li class="mix ndt">
+                  <li class="mix industrial">
                      <a href="RT-NDT-Viewer.html" data-largesrc="images/portfolio/rt-ndt.jpg" data-title="Approx Price: Rs 12,000 / Piece" data-description="<p>Infotech Resources has designed and developed a Radiographic Testing product for NDT</p><p>This is a low-cost, high-performance viewer perfect for industrial use
                         </p>">
                         <img src="images/portfolio/rt-ndt.jpg" alt="RT NDT Viewer by Infotech Resources">
@@ -474,13 +475,13 @@
                      color: #fff;">Our Markets</a></span></p>
                   <ul class="footernav-submenu mob-ul-pad">
                      <li>
-                        <a href="products.html">Hospitals</a>
+                        <a class="p-nav" data-title="hospitals" href="#">Hospitals</a>
                      </li>
                      <li>
-                        <a href="products.html">Security</a>
+                        <a class="p-nav" data-title="security" href="#">Security</a>
                      </li>
                      <li>
-                        <a href="products.html">Industrial</a>
+                        <a class="p-nav" data-title="industrial" href="#">Industrial</a>
                      </li>
                   </ul>
                </div>
@@ -540,35 +541,6 @@
       <script src="js/jquery.mixitup.min.js"></script>
       <!-- Grid js -->
       <script src="js/grid.js"></script>
-      <script type="text/javascript">
-         (function ($) {
-          'use strict';
-
-          jQuery(document).ready(function () {
-            /* Preloader */
-            $(window).on('load', function () {
-              $('body').addClass('loaded');
-            });
-            /* Mobile Navigation Hide or Collapse on Click */
-            $(document).on('click', '.navbar-collapse.in', function (e) {
-              if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
-                $(this).collapse('hide');
-              }
-            });
-            $('body').scrollspy({
-              target: '.navbar-collapse',
-              offset: 195
-
-            });
-            // Portfolio Filtering Hook
-            $('#og-grid').mixItUp(); // Portfolio filter
-            Grid.init(); //Portfolio Grid Expand
-
-
-          });
-
-         })(jQuery);
-
-      </script>
+      <script src="js/products-portfolio.js"></script>
    </body>
 </html>

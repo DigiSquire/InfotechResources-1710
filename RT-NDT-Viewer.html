@@ -475,9 +475,8 @@
                             <h3><span class="color">Other</span> Markets</h3>
                           </div>
                             <ul class="nav navbar-stacked">
-                                <li><a href="products.html">Hospitals</a></li>
-                                <li><a href="products.html">Security</a></li>
-
+                                <li><a class="p-nav" data-title="hospitals" href="#">Hospitals</a></li>
+                                <li><a class="p-nav" data-title="security" href="#">Security</a></li>
                             </ul>
                         </div>
                     </div>
@@ -497,13 +496,13 @@
                      color: #fff;">Our Markets</a></span></p>
                   <ul class="footernav-submenu mob-ul-pad">
                      <li>
-                        <a href="products.html">Hospitals</a>
+                        <a class="p-nav" data-title="hospitals" href="#">Hospitals</a>
                      </li>
                      <li>
-                        <a href="products.html">Security</a>
+                        <a class="p-nav" data-title="security" href="#">Security</a>
                      </li>
                      <li>
-                        <a href="products.html">Industrial</a>
+                        <a class="p-nav" data-title="industrial" href="#">Industrial</a>
                      </li>
                   </ul>
                </div>
@@ -577,9 +576,13 @@
             $('body').scrollspy({
               target: '.navbar-collapse',
               offset: 195
-
             });
-
+            // set filter for product page
+            $('.p-nav').click(function(event) {
+              event.preventDefault();
+              var name = $(this).data('title');
+              window.location = 'products.html?market=' + name;
+              });
 
           });
 
