@@ -378,6 +378,7 @@ FLoating labels
   font-size: 1.2rem;
   top: -22px;
   left: 0 !important;
+  color: rgba(204, 0, 0, 0.83);
 }
 @media only screen and (min-width: 600px) {
   .js .floating-labels legend + div {
@@ -391,5 +392,17 @@ FLoating labels
 .span_1_of_3 {
     padding: 1.5%;
 	margin: 1% 0 1% 1.6%;
+}
+.company_address{
+	    padding-top: 2em;
+	
+}
+.contact_info{
+	padding-left: 1em;
+}
+.submit-enquiry{
+	float:left;
+	padding-left:12em;
+	
 }
 
