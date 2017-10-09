@@ -411,9 +411,14 @@ Blog Default
 .post-title {
   margin-top: 0;
   color: #333;
-  font-size: 1.6em;
+  font-size: 1.45em;
+  text-align: center;
 }
-
+.product-content {
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 5px;
+}
 .post-title a{
   color: #686868;
 }
