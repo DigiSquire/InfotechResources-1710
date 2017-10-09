@@ -341,7 +341,7 @@ Custom icons
    background-color:#ffffff;
 }
 .cd-form .budget {
-  background: url("../images/contact-us-icons/cd-icon-budget.svg") no-repeat 16px center;
+  background: url("../images/contact-us-icons/cd-product.svg") no-repeat 16px center;
    background-color:#ffffff;
 }
 .cd-form .message {
@@ -350,6 +350,10 @@ Custom icons
 .cd-form [required].message {
   background: url("../images/contact-us-icons/cd-icon-message.svg") no-repeat 16px 16px, url("../img/cd-required.svg") no-repeat top right;
    background-color:#ffffff;
+}
+.cd-form .phone {
+  background: url("../images/contact-us-icons/cd-phone.svg") no-repeat 16px center;
+  
 }
 
 /* -------------------------------- 
