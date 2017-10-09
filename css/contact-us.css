@@ -347,13 +347,14 @@ Custom icons
 .cd-form .message {
   background: url("../images/contact-us-icons/cd-icon-message.svg") no-repeat 16px 16px;
 }
-.cd-form [required].message {
-  background: url("../images/contact-us-icons/cd-icon-message.svg") no-repeat 16px 16px, url("../images/contact-us-icons/cd-required.svg") no-repeat top right;
-   background-color:#ffffff;
-}
+
 .cd-form .phone {
   background: url("../images/contact-us-icons/cd-phone.svg") no-repeat 16px center;
   
+}
+.cd-form [required].phone {
+  background: url("../images/contact-us-icons/cd-phone.svg") no-repeat 16px 16px, url("../images/contact-us-icons/cd-required.svg") no-repeat top right;
+   background-color:#ffffff;
 }
 
 /* -------------------------------- 
