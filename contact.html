@@ -547,7 +547,7 @@
           <div class="row">
 			<div class="col-md-6">
 				<div class="row">
-				<form class="cd-form floating-labels">
+				<form class="cd-form floating-labels" id="contact-Us">
 		<fieldset>
 <!--
 			<div class="error-message">
@@ -571,7 +571,7 @@
 
 			<div class="icon">
 		    	<label class="cd-label" for="cd-company">Phone Number</label>
-				<input class="phone" type="text" name="cd-phone" id="cd-company" required>
+				<input class="phone" type="text" name="cd-phone" id="cd-phone" required>
 		    </div>
 
 		</fieldset>
@@ -581,7 +581,7 @@
 				<h4>Products</h4>
 
 				<p class="cd-select icon">
-					<select name="product" class="budget">
+					<select name="product" id="product" class="budget">
 						<option value="Select Products">Select Products</option>
 						<option value="Wi Token System">Wi Token System</option>
 						<option value="Attendant Call System">Nurse Call System</option>
@@ -620,10 +620,11 @@
 			</div>
 
 			<div class="submit-enquiry">
-		      	<input type="submit" value="Submit Enquiry">
+		      	<input type="submit" id="submitForm" value="Submit Enquiry">
 		    </div>
 		</fieldset>
 	</form>
+	<p id="successMessage"></p>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -736,5 +737,52 @@
       <script type="text/javascript" src="js/slider.js"></script>
       <script type="text/javascript" src="js/about.js"></script>
 	   <script type="text/javascript" src="js/contact-us.js"></script>
+	   	     <script type="text/javascript">
+	$(document).ready(function(){
+
+$('#submitForm').click(function(e){
+
+    if($("form")[0].checkValidity()) {
+		e.preventDefault();
+		console.log("call php file");
+			var name = $("#cd-name").val();
+			var email = $("#cd-email").val();
+			var companyName=$("#cd-company").val();
+			var workPhone=$("#cd-phone").val();
+			var product=$("#product").val();
+			var formMessage=$("#cd-textarea").val();
+
+				$.ajax({
+				type: 'POST',
+				url: 'sendEmail.php', // Your form script
+				data: {  name		:name,
+						 email		:email,
+						 companyName:companyName,
+						 workPhone	:workPhone,
+						 product:product,
+						 formMessage	:formMessage
+					   },
+				success: function(msg) {
+					if(msg){
+						console.log("success");
+						$('#contact-Us').find('input').val('');
+						$('#contact-Us').find('textarea').val('');
+						$('#contact-Us').find('#submitForm').val('Submit Enquiry');
+						$("#contact-Us").hide().delay(20000).fadeIn();
+						$("#successMessage").html("Thank you for taking the time to contact DigiSquire Ltd.If you need immediate assistance or would like to speak to someone now, please feel free to contact us directly at <strong>91-9822976448</strong>.").delay(20000).fadeOut();
+						$('#eId').addClass('email-load').delay(20000);
+
+					}
+					}
+            });
+
+			}else {
+		console.log("invalid form");
+
+		}
+		});
+		});
+
+	</script>
    </body>
 </html>
