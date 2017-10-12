@@ -346,6 +346,7 @@ Custom icons
 }
 .cd-form .message {
   background: url("../images/contact-us-icons/cd-icon-message.svg") no-repeat 16px 16px;
+  background-color:#ffffff;
 }
 
 .cd-form .phone {

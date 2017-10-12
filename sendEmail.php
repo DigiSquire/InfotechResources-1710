@@ -9,20 +9,18 @@ if(isset($_POST['email'])){
 if(isset($_POST['companyName'])){
     $companyName = $_POST['companyName'];
 }
-if(isset($_POST['product'])){
-    $product = $_POST['product'];
+if(isset($_POST['workPhone'])){
+    $workPhone = $_POST['workPhone'];
 }
 if(isset($_POST['formMessage'])){
     $formMessage = $_POST['formMessage'];
 }
-if(isset($_POST['workPhone'])){
-    $workPhone = $_POST['workPhone'];
-}
 
-$subject = 'Infotech form';
+$subject = 'Digisquire form';
 
 $headers = "From: " . $_POST['email'] . "\r\n";
 $headers .= "Reply-To: ". $_POST['email'] . "\r\n";
+$headers .= "CC: himanshusaraswat@outlook.com\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
@@ -34,12 +32,11 @@ $message .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>"
 $message .= "<tr><td><strong>Email:</strong> </td><td>" . $_POST['email']. "</td></tr>";
 $message .= "<tr><td><strong>Company Name:</strong> </td><td>" . $_POST['companyName'] . "</td></tr>";
 $message .= "<tr><td><strong>Work Phone:</strong> </td><td>" . $_POST['workPhone'] . "</td></tr>";
-$message .= "<tr><td><strong>Product:</strong> </td><td>" . $_POST['product'] . "</td></tr>";
 $message .= "<tr><td><strong>Message:</strong> </td><td>" . $_POST['formMessage'] . "</td></tr>";
 $message .= "</table>";
 $message .= "</body></html>";
 
-$to  = 'nidamemon29@gmail.com';//replace with your email
+$to  = 'contact@digisquire.co';//replace with your email
 
 $success = "
 <div class=\"row-fluid\">

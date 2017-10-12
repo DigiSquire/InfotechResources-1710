@@ -1,0 +1,9 @@
+[11-Oct-2017 21:16:26 Etc/GMT] PHP Notice:  Undefined index: email in /home/infotec2/public_html/sendEmail.php on line 24
+[11-Oct-2017 21:16:26 Etc/GMT] PHP Notice:  Undefined index: email in /home/infotec2/public_html/sendEmail.php on line 25
+[11-Oct-2017 21:16:26 Etc/GMT] PHP Notice:  Undefined index: name in /home/infotec2/public_html/sendEmail.php on line 33
+[11-Oct-2017 21:16:26 Etc/GMT] PHP Notice:  Undefined index: email in /home/infotec2/public_html/sendEmail.php on line 34
+[11-Oct-2017 21:16:26 Etc/GMT] PHP Notice:  Undefined index: companyName in /home/infotec2/public_html/sendEmail.php on line 35
+[11-Oct-2017 21:16:26 Etc/GMT] PHP Notice:  Undefined index: workPhone in /home/infotec2/public_html/sendEmail.php on line 36
+[11-Oct-2017 21:16:26 Etc/GMT] PHP Notice:  Undefined index: product in /home/infotec2/public_html/sendEmail.php on line 37
+[11-Oct-2017 21:16:26 Etc/GMT] PHP Notice:  Undefined index: formMessage in /home/infotec2/public_html/sendEmail.php on line 38
+[11-Oct-2017 21:16:26 Etc/GMT] PHP Notice:  Undefined variable: from in /home/infotec2/public_html/sendEmail.php on line 52
