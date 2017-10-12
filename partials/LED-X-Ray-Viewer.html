@@ -14,20 +14,19 @@
       <meta name="url" content="http://www.Infotech.co">
       <meta name="copyright" content="Infotech">
       <!-- Favicon -->
-      <link rel="shortcut icon" href="images/favicon/favicon.png">
+      <link rel="shortcut icon" href="../images/favicon/favicon.png">
       <!-- All CSS Plugins -->
-      <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="css/font-awesome.min.css" rel="stylesheet">
+      <link href="../css/bootstrap.min.css" rel="stylesheet">
+      <link href="../css/font-awesome.min.css" rel="stylesheet">
+      <link href="../css/animate.min.css" rel="stylesheet">
       <!-- Main CSS Stylesheet -->
-      <link rel="stylesheet" type="text/css" href="css/homeCl.css">
-      <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+      <link rel="stylesheet" type="text/css" href="../css/homeCl.css">
+      <link rel="stylesheet" type="text/css" href="../css/header-footer.css">
       <!-- DD style -->
-      <link rel="stylesheet" type"text/css" href="css/products-dd.css">
+      <link rel="stylesheet" type"text/css" href="../css/products-dd.css">
       <!-- Grid Component css -->
-      <link rel="stylesheet" href="css/component.css">
-      <link rel="stylesheet" type"text/css" href="css/product-main.css">
-      <!-- Animate.css -->
-      <script src="js/modernizr.js"></script> <!-- Modernizr -->
+      <link rel="stylesheet" href="../css/product-ex.css">
+      <script src="../js/modernizr.js"></script> <!-- Modernizr -->
       <!-- Google Web Fonts  -->
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
       <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
@@ -173,12 +172,9 @@
          .row {
          margin-right: 0px;
          }
-         .og-grid li {
-         width: 72%;
-         }
          }
          .padding-top {
-         padding-top: 90px;
+         padding-top: 75px;
          }
          .margin-bottom {
          margin-bottom: 35px;
@@ -189,11 +185,6 @@
          }
          .padding {
          padding: 65px 1em;
-         }
-         .single-service h2 {
-         margin-top: 34px;
-         margin-bottom: 15px;
-         font-weight: 300;
          }
          h2 {
          font-size: 31px;
@@ -211,20 +202,17 @@
          border: 0;
          }
          body {
-         background-image: url(images/bg/mo.png);
+         background-image: url(../images/bg/mo.png);
          background-repeat: no-repeat;
          background-attachment: fixed;
          background-size: cover;
          }
-         #list-elem li{
-         display: list-item;
-         list-style: disc;
+         /*fix this*/
+         footer ul,li{
+         list-style: none;
          margin: 0;
          padding: 0;
          border: 0;
-         height: 100%;
-         width: 100%;
-         text-align: justify;
          }
       </style>
    </head>
@@ -235,8 +223,6 @@
       </div>
       <!-- Preloader End -->
       <header id="home">
-         <!-- <div class="container">
-            </div> -->
          <div class="header-top-area navigation-background">
             <div class="container">
                <div class="row header-connect ">
@@ -250,8 +236,8 @@
                </div>
                <div class="row">
                   <div class="col-sm-4 col-xs-4 col-md-2">
-                     <a class="navbar-brand" href="index.html">
-                        <h1><img src="images/favicon/logo-120.jpg" alt="Digisquire logo"></h1>
+                     <a class="navbar-brand" href="../index.html">
+                        <h1><img src="../images/favicon/logo-120.jpg" alt="Digisquire logo"></h1>
                      </a>
                   </div>
                   <div class="col-sm-6 col-xs-6 col-md-1 ir-pos-767">
@@ -267,13 +253,13 @@
                                  <a style="border: none;" href="">Categories</a>
                                  <ul class="cd-secondary-dropdown is-hidden">
                                     <li class="go-back"><a href="#0">Menu</a></li>
-                                    <li class="see-all"><a href="products.html">All Products</a></li>
+                                    <li class="see-all"><a href="../infotechHeads/products.html">All Products</a></li>
                                     <li class="has-children">
                                        <a>Hospital Equipments</a>
                                        <ul class="is-hidden">
                                           <li class="go-back"><a href="#0">Products</a></li>
                                           <li><a href="Wi-Token-System.html">Wi Token System</a></li>
-                                          <li><a href="Attendant-Call-System.html">Nurse Call System</a></li>
+                                          <li><a href="nurse-call-system.html">Wireless Nurse Call System</a></li>
                                           <li><a href="LED-X-Ray-Viewer.html">LED X Ray Viewer</a></li>
                                        </ul>
                                     </li>
@@ -321,12 +307,12 @@
                <div class="navbar-collapse collapse custom-hover custom-hover-effects">
                   <ul class="nav navbar-nav navbar-right">
                      <li class="active">
-                        <a class="smoth-scroll" href="aboutUs.html">
+                        <a class="smoth-scroll" href="../infotechHeads/aboutUs.html">
                            About us
                            <div class="ripple-wrapper"></div>
                         </a>
                      </li>
-                     <li><a href="contact.html">Contact Us</a>
+                     <li><a href="../contact.html">Contact Us</a>
                      </li>
                   </ul>
                </div>
@@ -334,136 +320,155 @@
          </div>
       </header>
       <!--Products Section start-->
-      <div style="background-color: rgba(255, 255, 255, 0.85);">
+      <div class="back-layer">
          <section id="showcase">
             <div class="container">
                <div class="row wow fadeInDown" data-wow-duration="500ms">
-                  <div class="col-lg-12">
+                  <div class="col-lg-12 col-sm-12">
                      <!-- section title -->
                      <div class="title text-center">
-                        <h2>Our <span class="color">Products</span></h2>
+                        <h2>LED <span class="color">X-Ray Viewer</span></h2>
                      </div>
                      <!-- /section title -->
-                     <!-- portfolio item filtering -->
-                     <div class="portfolio-filter clearfix">
-                        <ul class="text-center">
-                           <li><a href="javascript:void(0)" class="filter" data-filter="all">All</a></li>
-                           <li><a href="javascript:void(0)" class="filter" data-filter=".hospital">Hospital Equipments</a></li>
-                           <li><a href="javascript:void(0)" class="filter" data-filter=".security">Security Devices</a></li>
-                           <li><a href="javascript:void(0)" class="filter" data-filter=".industrial">Industrial Devices</a></li>
-                           <!-- <li><a href="javascript:void(0)" class="filter" data-filter=".wireless">Wireless relay boards</a></li>
-                           <li><a href="javascript:void(0)" class="filter" data-filter=".ndt">NDT testing</a></li> -->
-                        </ul>
-                     </div>
-                     <!-- /portfolio item filtering -->
                   </div>
                   <!-- /end col-lg-12 -->
                </div>
                <!-- end row -->
             </div>
             <!-- end container -->
-            <!-- portfolio items -->
-            <div class="portfolio-item-wrapper wow fadeInUp" data-wow-duration="500ms">
-               <ul id="og-grid" class="og-grid">
-                  <!-- single portfolio item -->
-                  <li id="list-elem"class="mix hospital">
-                     <a href="LED-X-Ray-Viewer.html" data-largesrc="images/portfolio/led-x-ray-viewer-500x500.jpg" data-title="Price: Rs 6,500 / Unit" data-description="<b>Features</b><ul><li>Elegant looks</li><li>Plug-n-play for Operation Theaters</li><li>All controls enclosed inside the viewer</li><li>Power saving through use of LED instead of tubes
-                        or lamps</li><li>Snap–On sensors switch the LED ON only when X-ray is present</li><li>Uniform dispersion of light ensuring best viewing experience</li><li>Light intensity control via dimmer and remote</li><li>For double and triple sized viewers, individual x-ray viewing area On-Off option</li><li>Very long life without need of lamp replacement</li><li>Uniform dispersion of light ensuring best viewing experience</li><li>Light intensity control via dimmer and remote</li></ul>">
-                        <img src="images/portfolio/led-x-ray-viewer-500x500.jpg" alt="LED X Ray Viewer From Infotech Resources">
-                        <div class="hover-mask">
-                           <h3>LED X Ray Viewer</h3>
-                           <span>
-                           <i class="fa fa-plus fa-2x"></i>
-                           </span>
-                        </div>
-                     </a>
-                  </li>
-                  <!-- /single portfolio item -->
-                  <!-- single portfolio item -->
-                  <li class="mix hospital">
-                     <a href="Wi-Token-System.html"  data-largesrc="images/portfolio/wi-token-system-500x500.jpg" data-title="Approx Price: Rs 10,500 / Piece" data-description="Under the meticulous supervision of our skilled professionals, we are providing a high quality range of Wi Token System.">
-                        <img src="images/portfolio/wi-token-system-500x500.jpg" alt="Wi Token System From Infotech Resources">
-                        <div class="hover-mask">
-                           <h3>Wi Token System</h3>
-                           <span>
-                           <i class="fa fa-plus fa-2x"></i>
-                           </span>
-                        </div>
-                     </a>
-                  </li>
-                  <!-- /single portfolio item -->
-                  <!-- single portfolio item -->
-                  <li class="mix hospital">
-                     <a href="Attendant-Call-System.html" data-largesrc="images/portfolio/wireless-nurse-attendant-call-system-500x500.jpg" data-title="Approx Price: Rs 2,750 / Unit" data-description="We are engaged in providing a wide range of Attendant Call System to our clients. ">
-                        <img src="images/portfolio/wireless-nurse-attendant-call-system-500x500.jpg" alt="Nurse Call System For Hospitals From Infotech Resources">
-                        <div class="hover-mask">
-                           <h3>Nurse Call System</h3>
-                           <span>
-                           <i class="fa fa-plus fa-2x"></i>
-                           </span>
-                        </div>
-                     </a>
-                  </li>
-                  <!-- single portfolio item -->
-                  <li class="mix security">
-                     <a href="Security-Dwarpal.html"  data-largesrc="images/portfolio/dwarpal.jpg" data-title="Approx Price: Rs 2,200 / Piece" data-description="<p>Keeping in sync with the latest market norms and policies, we are indulged in providing a high quality range of Security Door Alarm System.</p>">
-                        <img src="images/portfolio/dwarpal.jpg" alt="Home Security Device Dwarpal From Infotech Resources">
-                        <div class="hover-mask">
-                           <h3>Door Alarm Sensor</h3>
-                           <span>
-                           <i class="fa fa-plus fa-2x"></i>
-                           </span>
-                        </div>
-                     </a>
-                  </li>
-                  <!-- /single portfolio item -->
-                  <!-- single portfolio item -->
-                  <li class="mix industrial">
-                     <a href="Four-Relay-Board.html" data-largesrc="images/portfolio/four-relay-board-500x500.jpg" data-title="Approx Price: Rs 1,500 / Piece" data-description="Owing to the efforts of our dedicated team of professionals, we have been constantly engaged in offering the best quality Four Relay Board.">
-                        <img src="images/portfolio/four-relay-board-500x500.jpg" alt="Four Relay Board From Infotech Resources">
-                        <div class="hover-mask">
-                           <h3>Four Relay Board</h3>
-                           <span>
-                           <i class="fa fa-plus fa-2x"></i>
-                           </span>
-                        </div>
-                     </a>
-                  </li>
-                  <!-- /single portfolio item -->
-                  <!-- single portfolio item -->
-                  <li class="mix industrial">
-                     <a href="Twelve-Relay-Board.html" data-largesrc="images/portfolio/twelve-relay-board-500x500.jpg" data-title="Approx Price: Rs 3,500 / Piece" data-description="We are remarkable enterprise, involved in offering superior quality Twelve Relay Board.">
-                        <img src="images/portfolio/twelve-relay-board-500x500.jpg" alt="Twelve Relay Board From Infotech Resources">
-                        <div class="hover-mask">
-                           <h3>Twelve Relay Board</h3>
-                           <span>
-                           <i class="fa fa-plus fa-2x"></i>
-                           </span>
-                        </div>
-                     </a>
-                  </li>
-                  <!-- /single portfolio item -->
-                  <!-- single portfolio item -->
-                  <li class="mix industrial">
-                     <a href="RT-NDT-Viewer.html" data-largesrc="images/portfolio/rt-ndt.jpg" data-title="Approx Price: Rs 12,000 / Piece" data-description="<p>Infotech Resources has designed and developed a Radiographic Testing product for NDT</p><p>This is a low-cost, high-performance viewer perfect for industrial use
-                        </p>">
-                        <img src="images/portfolio/rt-ndt.jpg" alt="RT NDT Viewer by Infotech Resources">
-                        <div class="hover-mask">
-                           <h3>RT NDT Viewer</h3>
-                           <span>
-                           <i class="fa fa-plus fa-2x"></i>
-                           </span>
-                        </div>
-                     </a>
-                  </li>
-                  <!-- /single portfolio item -->
-                  <!-- /single portfolio item -->
-               </ul>
-               <!-- end og grid -->
-            </div>
-            <!-- portfolio items wrapper -->
          </section>
          <!-- End section -->
+         <section id="blog-details" class="padding-top padding-bottom">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-9 col-sm-7">
+                     <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                           <div class="single-blog blog-details two-column">
+                              <div class="post-thumb col-md-7 col-sm-7">
+                                 <img src="..\images\portfolio\led-x-ray-viewer-500x500.jpg" class="img-responsive" alt="">
+                                 <a class="enquire" href="../infotechHeads/contact.html">Enquire Now</a>
+                              </div>
+                              <div class="col-md-5 col-sm-5 col-xs-12 in-mob-768">
+                                <h2 class="post-title"style="margin-top: 0px;">
+                                   Product Details
+                                </h2>
+                                 <div class="product-content col-md-12 col-sm-12 in-pad-768">
+                                    <table style="margin-bottom: 1em;">
+                                       <tbody>
+                                          <tr>
+                                             <td>Application</td>
+                                             <td>Hospital</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Power Source</td>
+                                             <td>Electric</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <a class="dwnld" href="../brochures/LED_X-Ray_Viewer.pdf" target="_blank" title="LED X-RAY Viewer Brochure">Download Brochure <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+                              </div>
+                              <div id="tab-container">
+                                 <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                       <h2 class="page-header">We are manufacturers of LED X-Ray Viewer which has uniform and bright illumination and high quality metal body.</h2>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                       <ul id="tab1" class="nav nav-tabs">
+                                          <li class="active"><a href="#tab1-item1" data-toggle="tab">Features</a></li>
+                                          <li><a href="#tab1-item3" data-toggle="tab">Variants</a></li>
+                                       </ul>
+                                       <div class="tab-content">
+                                          <div class="tab-pane fade active in" id="tab1-item1">
+                                             <ul>
+                                                <li class="shift-cell">Elegant looks with rugged metal body</li>
+                                                <li class="shift-cell">Power saving through use of LED instead of tubes or lamps</li>
+                                                <li class="shift-cell">Very long life without need of lamp replacement</li>
+                                                <li class="shift-cell">Uniform dispersion of light ensuring best viewing experience</li>
+                                                <li class="shift-cell">Light intensity control via dimmer</li>
+                                                <li class="shift-cell">For double and triple sized viewers, individual x-ray viewing area On-Off option</li>
+                                                <li class="shift-cell"><b>One year</b> warranty</li>
+                                             </ul>
+                                          </div>
+                                          <div class="tab-pane fade" id="tab1-item3">
+                                             <div class="t2" id="add_t2_1">
+                                                <table border="0">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td height="19" align="left">X-ray viewer</td>
+                                                         <td align="left">Dimension</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="19" align="left">Single screen</td>
+                                                         <td align="left">14" x 17"</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="19" align="left">Two screen</td>
+                                                         <td align="left">28" x 17"</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="19" align="left">Three screen</td>
+                                                         <td align="left">42" x 17"</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="19" align="left">Mammography</td>
+                                                         <td align="left">10" x 12"</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="20" align="left" valign="bottom">Opg (dental)</td>
+                                                         <td align="left">12" x 8"</td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-3 col-sm-5">
+                     <div class="sidebar blog-sidebar">
+                        <div class="sidebar-item  recent">
+                           <div class="title">
+                              <h3><span class="color">Other </span>Products</h3>
+                           </div>
+                           <div class="media">
+                              <div class="pull-left">
+                                 <a href="nurse-call-system.html"><img src="..\images\portfolio\wireless-nurse-attendant-call-system-500x500.jpg" alt=""></a>
+                              </div>
+                              <div class="media-body">
+                                 <h4><a href="nurse-call-system.html">Wireless Nurse Call System</a></h4>
+                              </div>
+                           </div>
+                           <div class="media">
+                              <div class="pull-left">
+                                 <a href="Wi-Token-System.html"><img src="..\images\portfolio\wi-token-system-500x500.jpg" alt=""></a>
+                              </div>
+                              <div class="media-body">
+                                 <h4><a href="Wi-Token-System.html">Wi Token System</a></h4>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="sidebar-item categories">
+                           <div class="title">
+                              <h3><span class="color">Other</span> Markets</h3>
+                           </div>
+                           <ul class="nav navbar-stacked">
+                              <li><a class="p-nav" data-title="security" href="#">Security</a></li>
+                              <li><a class="p-nav" data-title="industrial" href="#">Industrial</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--/#blog-->
       </div>
       <!--Products Section start-->
       <!-- Footer Start -->
@@ -471,7 +476,7 @@
          <div class="container">
             <div class="row row-1">
                <div class="col-md-4 text-left">
-                  <p><span><a href="products.html"class="smoth-scroll" style="font-size: 15px;   font-weight: 700;
+                  <p><span><a href="../infotechHeads/products.html"class="smoth-scroll" style="font-size: 15px;   font-weight: 700;
                      color: #fff;">Our Markets</a></span></p>
                   <ul class="footernav-submenu mob-ul-pad">
                      <li>
@@ -486,14 +491,14 @@
                   </ul>
                </div>
                <div class="col-md-4 text-left ftr-col-border">
-                  <p><span><a href="contact.html" class="smoth-scroll" style="font-size: 15px; font-weight: 700;
+                  <p><span><a href="../infotechHeads/contact.html" class="smoth-scroll" style="font-size: 15px; font-weight: 700;
                      color: #fff;">Contact us</a></span></p>
                   <ul class="footernav-submenu mob-ul-pad">
                      <li>
                         <a href="tel:+918049676021"><span><i class="fa fa-phone" aria-hidden="true"></i>+91-8049676021</span></a>
                      </li>
                      <li>
-                          <a href="contact.html">103,Chitrakoot,Chatushringi Road,
+                       <a href="../infotechHeads/contact.html">103,Chitrakoot,Chatushringi Road,
                         Model Colony, Pune,
 						Maharashtra 411053</a>
                      </li>
@@ -528,19 +533,46 @@
          <ul>
             <li><a href="https://api.whatsapp.com/send?phone=919049593581&text=Hi%20Team%20Infotech,%20have%20a%20query%20regarding" class="scroll-to-top" target="_blank" style="display: inline;margin-bottom: 132px;bottom: 180px;"><i class="fa fa-lg fa-whatsapp" aria-hidden="true"></i></a></li>
             <li><a href="https://api.whatsapp.com/send?phone=919049593581&text=Hi%20Team%20Infotech,%20have%20a%20query%20regarding" class="scroll-to-top" target="_blank" style="display: inline;background-color: #3B5998;margin-bottom: 76px;bottom: 180px;"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.indiamart.com/infotech-resources/" class="scroll-to-top" style="display:inline;background-color: #b11a12;bottom: 180px;"target="_blank"><img src="images/favicon/indiamart.png" alt="Digisquire logo" style="max-width: 73%;"></a></li>
+            <li><a href="https://www.indiamart.com/infotech-resources/" class="scroll-to-top" style="display:inline;background-color: #b11a12;bottom: 180px;"target="_blank"><img src="../images/favicon/indiamart.png" alt="Digisquire logo" style="max-width: 73%;"></a></li>
          </ul>
       </div>
       <!-- All Javascript Plugins  -->
-      <script type="text/javascript" src="js/jquery.min.js"></script>
-      <script type="text/javascript" src="js/bocg.js"></script>
+      <script type="text/javascript" src="../js/jquery.min.js"></script>
+      <script type="text/javascript" src="../js/bocg.js"></script>
       <!-- Main Javascript File  -->
-      <script type="text/javascript" src="js/jquery.menu-aim.js"></script>
-      <script type="text/javascript" src="js/menu.js"></script>
-      <!-- Portfolio Filtering -->
-      <script src="js/jquery.mixitup.min.js"></script>
-      <!-- Grid js -->
-      <script src="js/grid.js"></script>
-      <script src="js/products-portfolio.js"></script>
+      <script type="text/javascript" src="../js/jquery.menu-aim.js"></script>
+      <script type="text/javascript" src="../js/menu.js"></script>
+      <script type="text/javascript">
+         (function ($) {
+          'use strict';
+
+          jQuery(document).ready(function () {
+            /* Preloader */
+            $(window).on('load', function () {
+              $('body').addClass('loaded');
+            });
+            /* Mobile Navigation Hide or Collapse on Click */
+            $(document).on('click', '.navbar-collapse.in', function (e) {
+              if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+                $(this).collapse('hide');
+              }
+            });
+            $('body').scrollspy({
+              target: '.navbar-collapse',
+              offset: 195
+
+            });
+            // set filter for product page
+            $('.p-nav').click(function(event) {
+              event.preventDefault();
+              var name = $(this).data('title');
+              window.location = '../infotechHeads/products.html?market=' + name;
+              });
+
+          });
+
+         })(jQuery);
+
+      </script>
    </body>
 </html>

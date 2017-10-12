@@ -36,7 +36,7 @@
 		$('.p-nav').click(function(event) {
 			event.preventDefault();
 			var name = $(this).data('title');
-			window.location = 'products.html?market=' + name;
+			window.location = '../infotechHeads/products.html?market=' + name;
 			});
         /* Statistics Counter */
         $('.statistics').appear(function() {
