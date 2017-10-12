@@ -428,6 +428,123 @@
          html{
            margin-right: 0 !important;
          }
+         /*team*/
+
+         #our-team {
+         padding-bottom: 25px;
+         }
+         .member-photo {
+         overflow: hidden;
+         position: relative;
+         }
+         .member-photo img {
+         -webkit-transition: all 0.6s ease 0s;
+         -moz-transition: all 0.6s ease 0s;
+         -o-transition: all 0.6s ease 0s;
+         transition: all 0.6s ease 0s;
+         max-width: 280px;
+         max-height: 280px;
+         }
+         .member-photo:hover img {
+         -webkit-transform: scale(1.2);
+         -moz-transform: scale(1.2);
+         -ms-transform: scale(1.2);
+         -o-transform: scale(1.2);
+         transform: scale(1.2);
+         }
+         .member-title {
+         border-bottom-right-radius: 45px;
+         box-shadow: 0px 16px 22px 0px rgba(255, 136, 0, 0.1);
+         top: -5px;
+         padding: 10px 15px;
+         background: #ffffff;
+         }
+         .team-mate h4 {
+         font-family: 'Poppins',sans-serif;
+         color: #686868;
+         font-weight: 500;
+         font-size: 1.1em;
+         }
+         .member-title span {
+         color: #333;
+         font-weight: 400;
+         }
+         @media (max-width: 979px) and (min-width: 768px){
+         .team-mate {
+         margin: 0 auto 30px;
+         width: 280px;
+         }
+         }
+         @media only screen and (max-width: 767px) and (min-width: 480px){
+         .team-mate {
+         margin: 0 auto 30px;
+         width: 280px;
+         }
+         }
+         @media only screen and (max-width: 767px) and (min-width: 480px){
+         .team-mate {
+         margin: 0 auto 30px;
+         width: 240px;
+         }
+         }
+         @media only screen and (min-width: 354px) and (max-width: 479px){
+         .team-mate {
+         margin: 0 auto 31px;
+         width: 240px;
+         }
+         .section-title h2{
+         letter-spacing: 2px;
+         }
+         }
+         @media only screen and (max-width: 353px){
+         .team-mate {
+         margin: 0 auto 31px;
+         width: 240px;
+         }
+         .section-title h2{
+         letter-spacing: 2px;
+         }
+         }
+         @media only screen and (min-width: 354px){
+         .section-title h2{
+         letter-spacing: 4px;
+         }
+         }
+         @media (max-width: 1150px) and (min-width: 980px){
+         .team-mate {
+         margin-bottom: 30px;
+         }
+         }
+         @media (max-width: 1150px) and (min-width: 980px){
+         .team-mate img {
+         margin: 0 auto;
+         }
+         }
+         /* Services */
+         .section-title {
+         text-align: center;
+         }
+         .section-title h2 {
+         margin-top: 0;
+         margin: 0 auto;
+         padding: 10px 0;
+         margin-bottom: 30px;
+         text-transform: uppercase;
+          font-weight: 700;
+          font-size: 38px;
+          color: rgba(204, 0, 0, 0.83);
+         }
+         .row{
+         margin-right: 0px;
+         }
+         @media (min-width: 992px){
+         .col-md-1 {
+         width: 12.333333%;
+         }
+         }
+         .member-info{
+           padding: 15px;
+         }
       </style>
    </head>
    <body>
@@ -539,27 +656,8 @@
       <div class="back-layer">
          <section id="about-company" class="padding-top wow fadeInUp" data-wow-duration="400ms" data-wow-delay="400ms">
             <div class="container">
-              <div class="row">
-                 <div class="col-sm-12 text-center">
-                   <div class="col-sm-4">
-                     <img src="..\images\gallery\VijayChatturCEO.jpg" class="margin-bottom" style="max-height: 215px;" alt="">
-                      <h3 class="margin-bottom"style="text-align: center;font-size:1.2em;"><span class="color">Wg Cdr Vijay D Chattur <br> <i>Founder, CEO</i></h3>
-                   </div>
-                    <div class="col-sm-4">
-                      <img src="..\images\gallery\roshniChatturCMO.jpg" class="margin-bottom" alt=""style="max-width: 165px;max-height: 215px;">
-                       <h3 class="margin-bottom" style="text-align: center;font-size:1.2em;">Ms. Roshni Chattur <br> <i>CMO</i></h3>
-                    </div>
-                    <div class="col-sm-4">
-                      <img src="..\images\gallery\mayurKudalePE.jpg" class="margin-bottom" alt=""style="max-height: 215px;">
-                       <h3 class="margin-bottom" style="text-align: center;font-size:1.2em;">Mr. Mayur Kudale <br> <i>Product Engineer</i></h3>
-                    </div>
-
-                 </div>
-              </div>
                <div class="row">
                   <div class="col-sm-12 text-center">
-                     <!-- <img src="images/bg/5.png" class="margin-bottom" style="margin-right: 5em;" alt="">
-                     <img src="images/bg/5.png" class="margin-bottom" alt=""> -->
                      <div style="padding: 2em;color: #333;border-radius: 9%;" class="title">
                         <h1 class="margin-bottom"><span class="color">About</span> Our <span class="color">Company</span></h1>
                         <p style="font-size:0.9em">InfoTech Resources Ltd. is Pune based company focused on customer experience with innovative products. Its focused areas are wired & wireless applications in industry , hospital and security.</p>
@@ -570,6 +668,66 @@
             </div>
          </section>
          <!--/#about-company-->
+         <section id="our-team" style="padding-top:45px;">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="section-title">
+                     <h2><span class="color" style="color:#333;">Our</span> Team</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+              <div class="col-md-1">
+                  <!-- Dummy team member -->
+               </div>
+               <!-- team member -->
+               <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms">
+                  <article class="team-mate">
+                     <div class="member-photo">
+                        <img class="img-responsive" src="..\images\gallery\VijayChatturCEO.jpg" alt="Alok Nair Founder Digisquire:aloknair@digisquire.co">
+                     </div>
+                     <div class="member-title">
+                        <h4>Wg Cdr Vijay D Chatturr</h4>
+                        <span>Founder,CEO</span>
+                     </div>
+                     <div class="member-info">
+                      <p>After 20+ years of service with the Indian Air Force, Wg Cdr Vijay Chattur founded Infotech Resources Ltd. in 1998. He is a product of COE- Pune(B.E. Electronics) and IISC, Bangalore (M.E) and considers system design and development as his forte and is able to use his rich experience and extensive knowledge to bring forth good quality products.</p>
+                    </div>
+                  </article>
+               </div>
+               <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
+                  <article class="team-mate">
+                     <div class="member-photo">
+                        <img style="width: 280px;"class="img-responsive" src="..\images\gallery\roshniChatturCMO.jpg" alt="Gaurav Chattur Advisor  &#38; Mentor for Digisquire">
+                     </div>
+                     <div class="member-title">
+                        <h4>Ms. Roshni Chatturr</h4>
+                        <span>CMO</span>
+                     </div>
+                     <div class="member-info">
+                      <p>Having a B.E. (Computer Science) degree from Gujarat University, Roshni worked in the IT-sector for five years and now heads the marketing and operations team at Infotech Resources Ltd.</p>
+                    </div>
+                  </article>
+               </div>
+               <div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
+                  <article class="team-mate kill-margin-bottom">
+                    <div class="member-photo">
+                       <img class="img-responsive" src="..\images\gallery\mayurKudalePE.jpg" alt="Gaurav Chattur Advisor  &#38; Mentor for Digisquire">
+                    </div>
+                     <div class="member-title">
+                        <h4>Mr. Mayur Kudale</h4>
+                        <span>Product Engineer</span>
+                     </div>
+                     <div class="member-info">
+                      <p>System assembly and development are his strong points and his rich experience of 12 years at Infotech Resources Ltd. has ensured innovative and good quality products.</p>
+                    </div>
+                  </article>
+               </div>
+            </div>
+         </div>
+      </section>
+
          <!-- statistics starts-->
          <section class="section">
             <div class="container">
