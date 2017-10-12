@@ -19,7 +19,7 @@ body,html {
 	font-family: 'Poppins', sans-serif;
 }
 .back-layer{
-	background-color: rgba(255, 255, 255, 0.94);
+	background-color: rgba(255, 255, 255, 0.89);
 }
 ::selection {
 	background-color: #3297FD;
