@@ -186,7 +186,7 @@ h2, h3 {
 
 .hover-mask h3 {
 	color: #fff;
-	font-size: 20px;
+	font-size: 1.19em;
 	position: relative;
 	text-transform: capitalize;
 	top: 110px;
@@ -217,24 +217,12 @@ h2, h3 {
 		    transform: rotateY(0deg) scale(1,1);
 }
 
-         /*============================================================
+/*============================================================
 	For Small Desktop
 ==============================================================*/
 
 @media (min-width: 980px) and (max-width: 1150px) {
 
-	/* parallax section */
-
-	/* home slider */
-
-	/* about us */
-
-	/* our team */
-	/* testimonial */
-
-	/* blog page */
-
-	/* single blog page */
 }
 
 /*============================================================
@@ -243,31 +231,6 @@ h2, h3 {
 
 @media (min-width: 768px) and (max-width: 979px) {
 
-	/* parallax section */
-
-	/* home page slider */
-
-	/* navigation */
-
-	/* about us */
-
-	/* fun facts */
-
-	/* our services */
-
-	/* our team */
-
-	/* our skills */
-
-	/* pricing table */
-
-	/* testimonial */
-
-	/* latest posts */
-
-	/* blog page */
-
-	/* singla blog page */
 }
 
 
@@ -277,39 +240,11 @@ h2, h3 {
 
 @media only screen and (max-width: 767px) {
 
-	/* parallax section */
-
-	/* h1 font size home slider */
-
-	/* navigation */
-
-	/* fun facts */
-
-	/* services */
-
-	/* our skills */
-
-	/* our team */
-
-	/* pricing table */
-
-	/* portfolio */
     .portfolio-filter ul li a {
         margin: 0 10px 10px 0;
         padding: 5px 10px;
     }
 
-	/* testimonials */
-
-	/* latest posts */
-
-	/* contact */
-
-	/* footer */
-
-	/* blog page */
-
-	/* single blog page */
 }
 
 
