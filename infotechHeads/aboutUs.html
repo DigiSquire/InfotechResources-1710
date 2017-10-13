@@ -25,9 +25,11 @@
       <link rel="stylesheet" href="../css/products-dd.css">
       <link rel="stylesheet" href="../css/slider.css">
       <link rel="stylesheet" href="../css/magnific-popup.css">
+      <link rel="stylesheet" href="../css/owl.carousel.css">
       <script src="../js/modernizr.js"></script> <!-- Modernizr -->
       <!-- Google Web Fonts  -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+      <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"> -->
+      <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato|Manuale|Marcellus|Nunito|Open+Sans|Roboto|Ubuntu" rel="stylesheet">
       <!-- <link href="https://fonts.googleapis.com/css?family=Lato|Manuale|Open+Sans|Roboto" rel="stylesheet"> -->
       <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
       <!--[if lt IE 9]>
@@ -209,6 +211,8 @@
          font-weight: 500;
          font-size: 12px;
          letter-spacing: 1px;
+         font-size: 1.02em;
+font-family: 'Marcellus', serif;
          }
          /* Colors */
          .color-1 {
@@ -256,7 +260,7 @@
          }
          }
          .padding-top {
-         padding-top: 90px;
+         padding-top: 22px;
          }
          .margin-bottom {
          margin-bottom: 35px;
@@ -272,6 +276,7 @@
          margin-top: 34px;
          margin-bottom: 15px;
          font-weight: 300;
+         font-family: 'Marcellus', serif;
          }
          h2 {
          font-size: 31px;
@@ -423,6 +428,8 @@
          text-align: center;
          font-size: 38px;
          color: rgba(204, 0, 0, 0.83);
+
+    font-family: 'Marcellus', serif;
          }
          .title .color {
          color: #000;
@@ -435,14 +442,17 @@
          font-size: 1.11em;
          color: #686868;
          line-height: 0.8em;
+         font-family: 'Marcellus', serif;
          }
          .team-name{
          font-size: 1.78em;
          color: #333;
+         font-family: 'Marcellus', serif;
          }
          .team-content{
          color: #2f4f4f;
          font-size: 0.98em;
+         font-family: 'Marcellus', serif;
          }
          .single-features {
          overflow: hidden;
@@ -472,6 +482,206 @@
          text-align: center;
          }
          }
+         .pb100 {
+    padding-bottom: 5em;
+}
+.p0 {
+    padding: 0px;
+}
+
+/* CSS For Brand Logo carousel */
+
+.icon {
+    display: inline-block;
+    font-style: normal;
+}
+
+.icon.arrow_right:before {
+    content: '<';
+}
+    .owl-carousel .owl-controls {
+margin-top: 0;
+}
+
+.owl-carousel .owl-controls .owl-buttons {
+    margin-top: 30px;
+}
+
+.owl-carousel .owl-controls .owl-buttons > div {
+    display: inline-block;
+    font-size: 14px;
+    color: #aaa;
+    overflow: hidden;
+    z-index: 9;
+    margin: 0 5px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.owl-carousel .owl-controls .owl-buttons > div .icon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 26px;
+    font-family: "Lato", sans-serif;
+    border: 1px solid #aaa;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.owl-carousel .owl-controls .owl-buttons > div .icon:before, .owl-carousel .owl-controls .owl-buttons > div .icon:after {
+    display: block;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.owl-carousel .owl-controls .owl-buttons > div .icon:after {
+    top: 0;
+    color: #e61d2a;
+    width: 100%;
+}
+
+.owl-carousel .owl-controls .owl-buttons > div .icon.arrow_right:before, .owl-carousel .owl-controls .owl-buttons > div .icon.arrow_right:after {
+    content: '>';
+}
+
+.owl-carousel .owl-controls .owl-buttons > div .icon.arrow_right:after {
+    position: absolute;
+    left: 0;
+    -webkit-transform: translateX(-140%);
+    -moz-transform: translateX(-140%);
+    -ms-transform: translateX(-140%);
+    -o-transform: translateX(-140%);
+    transform: translateX(-140%);
+}
+
+.owl-carousel .owl-controls .owl-buttons > div .icon.arrow_left:before, .owl-carousel .owl-controls .owl-buttons > div .icon.arrow_left:after {
+    content: '<';
+}
+
+.owl-carousel .owl-controls .owl-buttons > div .icon.arrow_left:after {
+    position: absolute;
+    right: 0;
+    -webkit-transform: translateX(140%);
+    -moz-transform: translateX(140%);
+    -ms-transform: translateX(140%);
+    -o-transform: translateX(140%);
+    transform: translateX(140%);
+}
+
+.owl-carousel .owl-controls .owl-buttons > div:hover .icon {
+    border-color: #e61d2a !important;
+    color: #e61d2a !important;
+}
+
+.owl-carousel .owl-controls .owl-buttons > div:hover .arrow_right:before {
+    -webkit-transform: translateX(140%);
+    -moz-transform: translateX(140%);
+    -ms-transform: translateX(140%);
+    -o-transform: translateX(140%);
+    transform: translateX(140%);
+}
+
+.owl-carousel .owl-controls .owl-buttons > div:hover .arrow_right:after {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.owl-carousel .owl-controls .owl-buttons > div:hover .arrow_left:before {
+    -webkit-transform: translateX(-140%);
+    -moz-transform: translateX(-140%);
+    -ms-transform: translateX(-140%);
+    -o-transform: translateX(-140%);
+    transform: translateX(-140%);
+}
+
+.owl-carousel .owl-controls .owl-buttons > div:hover .arrow_left:after {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.owl-carousel .owl-controls .owl-pagination {
+    margin-top: 30px;
+}
+
+.owl-carousel .owl-controls .owl-pagination .owl-page {
+    position: relative;
+}
+
+.owl-carousel .owl-controls .owl-pagination .owl-page > span {
+    opacity: 1;
+    width: 9px;
+    height: 9px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #1b1b1b;
+    margin: 6px;
+    background: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.owl-carousel .owl-controls .owl-pagination .owl-page.active > span {
+    border-color: #8ec620;
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.owl-carousel:hover .owl-controls .owl-buttons > div.owl-next {
+	opacity: 1;
+}
+
+.owl-carousel:hover .owl-controls .owl-buttons > div.owl-prev {
+	opacity: 1;
+}
+
+
+.owl-prev {
+	position: absolute;
+	top: 47%;
+	left: -20px;
+}
+
+.owl-next {
+	position: absolute;
+	top: 47%;
+	right: -20px;
+}
+
+
+/* CSS For Brand Logo carousel */
+
+
       </style>
    </head>
    <body>
@@ -587,8 +797,10 @@
                   <div class="col-sm-12 text-center">
                      <div style="padding: 2em;color: #333;border-radius: 9%;" class="title">
                         <h1 class="margin-bottom"><span class="color">About</span> Our <span class="color">Company</span></h1>
-                        <p style="font-size:0.9em">InfoTech Resources Ltd. is Pune based company focused on customer experience with innovative products. Its focused areas are wired & wireless applications in industry , hospital and security.</p>
-                        <p style="font-size:0.9em">The company has history of two decades of solution providing. The company was promoted by <strong>Wg Cdr Vijay D Chattur (Retd)</strong>, a product of COE Pune  (B.E.) and IISc, Bangalore (M.E.). With his rich experience of working on various systems like Radars, Missiles, Communications and Electronic Warfare, system design becomes forte for the company.</p>
+                        <p style="    font-size: 1.2em;
+    font-family: 'Marcellus', serif;">InfoTech Resources Ltd. is Pune based company focused on customer experience with innovative products. Its focused areas are wired & wireless applications in industry , hospital and security.</p>
+                        <p style="    font-size: 1.2em;
+    font-family: 'Marcellus', serif;">The company has history of two decades of solution providing. The company was promoted by <strong>Wg Cdr Vijay D Chattur (Retd)</strong>, a product of COE Pune  (B.E.) and IISc, Bangalore (M.E.). With his rich experience of working on various systems like Radars, Missiles, Communications and Electronic Warfare, system design becomes forte for the company.</p>
                      </div>
                   </div>
                </div>
@@ -635,7 +847,7 @@
                         <img src="..\images\gallery\VijayChatturCEO.jpg" style="min-width: 200px;max-height: 200px;border-radius: 50%;box-shadow: 0px 9px 5px 0px rgba(96, 125, 139, 0.73);" class="img-responsive" alt="">
                      </div>
                      <div class="col-sm-8 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2 class="team-name">Wg Cdr Vijay D Chattur</h2>
+                        <h2 class="team-name">Wg Cdr Vijay D Chattur <span style="font-size: 0.5em;">(Retd)</span></h2>
                         <h4 class="team-role">Founder,CEO</h4>
                         <p class="team-content">After 20+ years of service with the Indian Air Force, Wg Cdr Vijay Chattur founded Infotech Resources Ltd. in 1998. He is a product of COE- Pune(B.E. Electronics) and IISC, Bangalore (M.E) and considers system design and development as his forte and is able to use his rich experience and extensive knowledge to bring forth good quality products.</p>
                      </div>
@@ -669,12 +881,14 @@
                   <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                      <div class="single-service box-1" >
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                           <img src="../images/bg/icon1.png" alt="">
+                           <i style="
+    color: #00BCD4;
+" class="fa fa-3x fa-users" aria-hidden="true"></i>
                         </div>
                         <h2 style="color:#333;">Why Us</h2>
-                        <p style="font-size: 0.8em;">Since our inception, we have progressed substantially to acquire a respectable position in the industry. </p>
-                        <p style="font-size: 0.8em;">Some of the factors which have played a supporting role in this, are listed below:</p>
-                        <ul style="text-align:left;font-size: 0.8em;padding-left:6em;">
+                        <p style="font-size: 0.98em;color: #2f4f4f;font-family: 'Marcellus', serif;">Since our inception, we have progressed substantially to acquire a respectable position in the industry. </p>
+                        <p style="font-size: 0.98em;color: #2f4f4f;font-family: 'Marcellus', serif;">Some of the factors which have played a supporting role in this, are listed below:</p>
+                        <ul style="text-align:left;ffont-size: 0.98em;color: #2f4f4f;font-family: 'Marcellus', serif;padding-left:6em;">
                            <li>Experienced team</li>
                            <li>Wide distribution network</li>
                            <li>Quality products</li>
@@ -686,19 +900,23 @@
                   <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
                      <div class="single-service box-1" style="">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                           <img src="../images/bg/icon2.png" alt="">
+                           <i style="
+    color: #FF5722;
+"class="fa fa-3x fa-thumbs-o-up" aria-hidden="true"></i>
                         </div>
                         <h2 style="color: #333;">Our Quality</h2>
-                        <p style="font-size: 0.8em;">We have achieved a reputed position in the market for offering efficient products with high quality standards. In addition to this, we have developed a specialized division for quality testing that is completely responsible to check the products before dispatching to the clients. Our team of talented quality experts keeps a close watch on the every single process of production, storage, packaging, transport and so on to deliver the best products to customers. We work with passion and dedication with a sole aim of attaining total customer satisfaction and try to supply the products that match the international standards completely.</p>
+                        <p style="font-size: 0.98em;color: #2f4f4f;font-family: 'Marcellus', serif;">We have achieved a reputed position in the market for offering efficient products with high quality standards. In addition to this, we have developed a specialized division for quality testing that is completely responsible to check the products before dispatching to the clients. Our team of talented quality experts keeps a close watch on the every single process of production, storage, packaging, transport and so on to deliver the best products to customers. We work with passion and dedication with a sole aim of attaining total customer satisfaction and try to supply the products that match the international standards completely.</p>
                      </div>
                   </div>
                   <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
                      <div class="single-service box-1 box-2">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                           <img src="../images/bg/icon3.png" alt="">
+                           <i style="
+    color: #9C27B0;
+"class="fa fa-3x fa-wrench" aria-hidden="true"></i>
                         </div>
                         <h2 style="color:#333;">Warranty & Services</h2>
-                        <p style="font-size: 0.8em;">We Make Sure To Keep You Rest Assured. Each product of ours goes to an extensive quality check process and we further ensure a hassle-free service for 1 year.</p>
+                        <p style="font-size: 0.98em;color: #2f4f4f;font-family: 'Marcellus', serif;">We Make Sure To Keep You Rest Assured. Each product of ours goes to an extensive quality check process and we further ensure a hassle-free service for 1 year.</p>
                      </div>
                   </div>
                </div>
@@ -771,6 +989,153 @@
             <!-- /container -->
          </section>
          <!-- in the news end -->
+         <!-- clients -->
+         <div class="about pb100" id="about">
+			<div class="container p0" style="max-width: 1000px;">
+				<!--container-->
+				<div class="row">
+					<div class="myclient-slider">
+						<!-- ABOUT ITEM -->
+						<div class="">
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/1.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/2.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/3.png" style="margin:10px auto">
+							</div>
+						</div>
+						<!-- <div class="">
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix">
+								<img class="img-responsive" src="../images/clients/4.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential">
+								<img class="img-responsive" src="../images/clients/5.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix">
+								<img class="img-responsive" src="../images/clients/6.png" style="margin:10px auto">
+							</div>
+						</div> -->
+						<!-- <div class="">
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix">
+								<img class="img-responsive" src="../images/clients/7.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential">
+								<img class="img-responsive" src="../images/clients/8.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix">
+								<img class="img-responsive" src="../images/clients/9.svg" style="margin:10px auto">
+							</div>
+						</div> -->
+						<div class="">
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/10.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/11.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/12.png" style="margin:10px auto">
+							</div>
+						</div>
+
+						<div class="">
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/13.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/14.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/15.png" style="margin:10px auto">
+							</div>
+						</div>
+						<div class="">
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/16.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/17.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/18.png" style="margin:10px auto">
+							</div>
+						</div>
+						<div class="">
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/19.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/20.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/21.png" style="margin:10px auto">
+							</div>
+						</div>
+						<div class="">
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/22.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/23.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/24.png" style="margin:10px auto">
+							</div>
+						</div>
+
+						<div class="">
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/25.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/26.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/27.png" style="margin:10px auto">
+							</div>
+						</div>
+						<div class="">
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/28.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/29.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/30.png" style="margin:10px auto">
+							</div>
+						</div>
+						<div class="">
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/31.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/32.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/33.png" style="margin:10px auto">
+							</div>
+						</div>
+						<div class="">
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/34.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/35.png" style="margin:10px auto">
+							</div>
+							<div class="about-item1 text-center waypoint-load waypoint-load-sequential clearfix"><!--about-item1-->
+								<img class="img-responsive" src="../images/clients/36.png" style="margin:10px auto">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+         <!-- clients end -->
       </div>
       <!-- Footer Start -->
       <footer style="padding-top:40px;padding-bottom: 25px;"  class="footer-section">

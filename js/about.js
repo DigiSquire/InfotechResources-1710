@@ -33,46 +33,80 @@
 
 		});
 		// set filter for product page
-		$('.p-nav').click(function(event) {
+		$('.p-nav').click(function (event) {
 			event.preventDefault();
 			var name = $(this).data('title');
 			window.location = '../infotechHeads/products.html?market=' + name;
-			});
-        /* Statistics Counter */
-        $('.statistics').appear(function() {
-           var counter = $(this).find('.statistics-count');
-           var toCount = counter.data('count');
+		});
+		// Script to control capabilities carousel
+		/*==============================
 
-           $(counter).countTo({
-           from: 0,
-           to: toCount,
-           speed: 5000,
-           refreshInterval: 50
-           })
-           });
-					//  Gallery Pop Up Animation
-					     $('.gallery-img').magnificPopup({
-					         type: 'image',
-					         gallery: {
-					             enabled: true
-					         },
-									 image: {
- markup: '<div class="mfp-figure gallery-img">'+
-					 '<div class="mfp-close"></div>'+
-					 '<div class="mfp-img"></div>'+
-					 '<div class="mfp-bottom-bar">'+
-						 '<div class="mfp-title"></div>'+
-						 '<div class="mfp-counter"></div>'+
-					 '</div>'+
-				 '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+					 Client slider
 
- cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
- titleSrc: 'title',
- verticalFit: true, // Fits image in area vertically
+			 ==============================*/
 
- tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
-}
-					     });
+			//  if ($(".myclient-slider").length > 0) {
+
+             $(".myclient-slider").owlCarousel({
+
+                 autoPlay: 5000,
+
+                 slideSpeed: 300,
+
+                 navigation: true,
+
+                 pagination: false,
+
+                 slide:4,
+
+                 items: 6,
+
+                 navigationText: ['<i class="icon arrow_left"></i>', '<i class="icon arrow_right"></i>']
+
+             });
+
+        //  }
+		// 		 $("#myclient-slider").owlCarousel({
+		// 	autoPlay: 3000,
+		// 	items: 3,
+		// 	itemsDesktop: [1199, 3],
+		// 	itemsDesktopSmall: [979, 3],
+		// });
+		/* Statistics Counter */
+		$('.statistics').appear(function () {
+			var counter = $(this).find('.statistics-count');
+			var toCount = counter.data('count');
+
+			$(counter).countTo({
+				from: 0,
+				to: toCount,
+				speed: 5000,
+				refreshInterval: 50
+			})
+		});
+		//  Gallery Pop Up Animation
+		$('.gallery-img').magnificPopup({
+			type: 'image',
+			gallery: {
+				enabled: true
+			},
+			image: {
+				markup: '<div class="mfp-figure gallery-img">' +
+					'<div class="mfp-close"></div>' +
+					'<div class="mfp-img"></div>' +
+					'<div class="mfp-bottom-bar">' +
+					'<div class="mfp-title"></div>' +
+					'<div class="mfp-counter"></div>' +
+					'</div>' +
+					'</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+				cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+				titleSrc: 'title',
+				verticalFit: true, // Fits image in area vertically
+
+				tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
+			}
+		});
 
 	});
 
