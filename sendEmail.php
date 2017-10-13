@@ -36,7 +36,7 @@ $message .= "<tr><td><strong>Message:</strong> </td><td>" . $_POST['formMessage'
 $message .= "</table>";
 $message .= "</body></html>";
 
-$to  = 'contact@digisquire.co';//replace with your email
+$to  = 'nidamemon29@gmail.com';//replace with your email
 
 $success = "
 <div class=\"row-fluid\">
@@ -47,7 +47,9 @@ $success = "
     </div>
 </div>
 ";
-if (mail($to, $subject,$message,$headers)) {
+$sendingEmail=mail($to, $subject,$message,$headers);
+echo $sendingEmail;
+if (sendingEmail) {
     echo "$success"; // success
 } else {
     echo 'Form submission failed. Please try again...'; // failure
@@ -55,10 +57,10 @@ if (mail($to, $subject,$message,$headers)) {
 // Success Message
 
 //header("Location: http://digisquire.co");
-/* echo "Message sent";
+ echo "Message sent";
 echo $name;
 echo $from ;
 echo $subject;
 echo $message;
-echo $to; */
+echo $to; 
 die;

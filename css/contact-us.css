@@ -357,7 +357,7 @@ Custom icons
   
 }
 .cd-form [required].phone {
-  background: url("../images/contact-us-icons/cd-phone.svg") no-repeat 16px 16px, url("../images/contact-us-icons/cd-required.svg") no-repeat top right;
+  background: url("../images/contact-us-icons/cd-phone.svg") no-repeat 16px 16px, url("../images/contact-us-icons/cd-required.svg") no-repeat top;
    background-color:#ffffff;
 }
 
