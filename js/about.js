@@ -39,14 +39,6 @@
 			window.location = '../infotechHeads/products.html?market=' + name;
 		});
 		// Script to control capabilities carousel
-		/*==============================
-
-					 Client slider
-
-			 ==============================*/
-
-			//  if ($(".myclient-slider").length > 0) {
-
              $(".myclient-slider").owlCarousel({
 
                  autoPlay: 5000,
@@ -64,14 +56,8 @@
                  navigationText: ['<i class="icon arrow_left"></i>', '<i class="icon arrow_right"></i>']
 
              });
-
-        //  }
-		// 		 $("#myclient-slider").owlCarousel({
-		// 	autoPlay: 3000,
-		// 	items: 3,
-		// 	itemsDesktop: [1199, 3],
-		// 	itemsDesktopSmall: [979, 3],
-		// });
+						 //Initiat WOW JS
+		new WOW().init();
 		/* Statistics Counter */
 		$('.statistics').appear(function () {
 			var counter = $(this).find('.statistics-count');
