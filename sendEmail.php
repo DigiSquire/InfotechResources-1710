@@ -16,7 +16,7 @@ if(isset($_POST['formMessage'])){
     $formMessage = $_POST['formMessage'];
 }
 
-$subject = 'Digisquire form';
+$subject = 'Digisquire';
 
 $headers = "From: " . $_POST['email'] . "\r\n";
 $headers .= "Reply-To: ". $_POST['email'] . "\r\n";
@@ -47,20 +47,23 @@ $success = "
     </div>
 </div>
 ";
-$sendingEmail=mail($to, $subject,$message,$headers);
-echo $sendingEmail;
-if (sendingEmail) {
-    echo "$success"; // success
+
+$checkmail=mail($to, $subject,$message,$headers);
+
+ if ($checkmail) {
+	 echo "$success"; // success
+	
+    
 } else {
     echo 'Form submission failed. Please try again...'; // failure
-}
+} 
 // Success Message
-
+echo $checkmail;
 //header("Location: http://digisquire.co");
- echo "Message sent";
+ /*echo "Message sent";
 echo $name;
 echo $from ;
 echo $subject;
 echo $message;
-echo $to; 
+echo $to; */
 die;
