@@ -215,10 +215,32 @@
 
 
          /*overwrite*/
-         .single-blog .post-overlay span a {
-    margin-left: 4px;
-    font-size: 16px;
-    top: 55px;
+      .single-blog .post-overlay span a {
+      margin-left: 4px;
+      font-size: 16px;
+      top: 55px;
+      }
+      /*carousel*/
+      .carousel-indicators.visible-xs {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -35px;
+    width: 100%;
+    left: 0;
+  }
+
+  .carousel-indicators.visible-xs li {
+    border-color: #D29948;
+    border-width: 2px;
+    height: 12px;
+    margin: 0 5px 0 0;
+    width: 12px;
+  }
+
+  .carousel-indicators.visible-xs li.active {
+    background: rgba(210, 153, 72, 0.7);
   }
       </style>
    </head>
@@ -353,7 +375,47 @@
                      <div class="row">
                         <div class="col-md-12 col-sm-12">
                            <div class="single-blog blog-details two-column">
-                              <div class="post-thumb col-md-7"><img src="..\images\portfolio\rt-ndt.jpg" class="img-responsive" alt="">
+                              <div class="post-thumb col-md-7">
+                                <!-- <img src="..\images\portfolio\rt-ndt.jpg" class="img-responsive" alt=""> -->
+                                <div id="carousel-container">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators visible-xs">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="http://placehold.it/1140x487/green" alt="">
+                            <!-- <div class="carousel-caption">
+                                <h3>First slide label</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div> -->
+                        </div>
+                        <div class="item">
+                            <img src="http://placehold.it/1140x487/blue" alt="">
+                            <!-- <div class="carousel-caption">
+                                <h3>Second slide label</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div> -->
+                        </div>
+                        <div class="item">
+                            <img src="http://placehold.it/1140x487/red" alt="">
+                            <!-- <div class="carousel-caption">
+                                <h3>Third slide label</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <a class="left carousel-control hidden-xs" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control hidden-xs" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div><!--/#carousel-example-generic-->
+            </div><!--/#carousel-container-->
+
                                 <a class="dwnld" href="../contact.html"style="margin-left: 29%;">Enquire Now</a>
                               </div>
                               <div class="col-md-5 padding-left">
