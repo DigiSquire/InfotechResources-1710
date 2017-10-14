@@ -72,7 +72,8 @@
   .title h2 {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 2.5em;
+  font-family: 'Manuale', serif;
   color: rgba(204, 0, 0, 0.83);
   margin-top: 2em;
   }
@@ -104,6 +105,8 @@
   padding: 8px 4px 8px 8px;
   line-height: 29px;
   text-align: left;
+  font-size: 1.05em;
+  font-family: 'Manuale', serif;
   }
   .post-thumb   img {
   max-width: 415px;
@@ -111,22 +114,24 @@
   border: 1px solid #cacaca ;
   }
   .dwnld  {
-  font-size: 1em;
+  font-size: 1.05em;
+  font-family: 'Manuale', serif;
   color: #fff;
   background-color: #f82f53;
   text-transform: capitalize;
-  padding: 10px 20px;
+  padding: 7px 11px;
   border-radius: 1.25em;
   display: inline-block;
   margin: 26px 0 0 19%;
   outline: none;
   }
   .enquire  {
-  font-size: 1em;
+  font-size: 1.05em;
+  font-family: 'Manuale', serif;
   color: #fff;
   background-color: #f82f53;
   text-transform: capitalize;
-  padding: 10px 20px;
+  padding: 7px 11px;
   border-radius: 1.25em;
   display: inline-block;
   margin: 26px 0 0 19%;
@@ -138,15 +143,16 @@
   .title h3 {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 1.6em;
   color: rgba(204, 0, 0, 0.83);
+  font-family: 'Manuale', serif;
   }
   .shift-cell{
-list-style: disc;
-margin-left: 28px;
-font-size: 1.6rem;
-    font-weight: 400;
-        text-align: justify;
+  list-style: disc;
+  margin-left: 28px;
+  font-size: 1.05em;
+  text-align: justify;
+  font-family: 'Manuale', serif;
   }
   .sidebar img{
     max-width: 52px;
@@ -158,11 +164,11 @@ font-size: 1.6rem;
   }
   .page-header{
     margin-top: 3em;
-  font-size: 1.6rem;
-  color: #333;
-  font-weight: 400;
-      line-height: 1.4em;
-      border: none
+    font-size: 1.15em;
+    color: #333;
+    line-height: 1.4em;
+    border: none;
+    font-family: 'Manuale', serif;
   }
   .nav-tabs>li>a {
       color: #333;
@@ -174,6 +180,8 @@ font-size: 1.6rem;
   }
   .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
       color: rgba(204, 0, 0, 0.83);
+      font-size: 1.1em;
+    font-family: 'Manuale', serif;
   }
   /*Tabs styling*/
   .overflow{
@@ -220,11 +228,11 @@ font-size: 1.6rem;
 }
 
 .categories .navbar-stacked li a {
-  font-size: 16px;
+  font-size: 1.1em;
   color: #6a6a6a;
   padding: 8px 0;
   padding-left: 0;
-  font-weight: 400;
+  font-family: 'Manuale', serif;
 }
 
 .categories .navbar-stacked li a:hover{
@@ -300,8 +308,9 @@ font-size: 1.6rem;
 }
 
 .sidebar-item .media .media-body h4 a{
-  color: #7d7d7d;
-  font-size: 16px;
+  color: #6a6a6a;
+  font-size: 1em;
+  font-family: 'Manuale', serif;
 }
 
 .sidebar-item .media .media-body p {
@@ -422,13 +431,17 @@ Blog Default
 .post-title {
   margin-top: 0;
   color: #333;
-  font-size: 1.45em;
-  text-align: center;
+  text-align:center;
+  font-size: 2em;
+  font-family: 'Manuale', serif;
+
 }
 .product-content {
     text-align: center;
     padding-left: 54px;
     padding-right: 5px;
+    font-family: 'Manuale', serif;
+    font-size: 1.1em;
 }
 .post-title a{
   color: #686868;
