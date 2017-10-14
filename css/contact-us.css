@@ -1,7 +1,9 @@
-h1 { text-transform: uppercase;
+h1 {
+    text-transform: uppercase;
     font-weight: 700;
-    font-size: 38px;
-     color: rgba(204, 0, 0, 0.83);
+    font-size: 2.5em;
+    font-family: 'Manuale', serif;
+    color: rgba(204, 0, 0, 0.83);
 }
 .color1 {
 	color: #000;
@@ -403,11 +405,23 @@ FLoating labels
 	margin: 1% 0 1% 1.6%;
 }
 .company_address{
-	    padding-top: 2em;
-
+	    padding-top: 1em;
+}
+.company_address h3{
+  font-size: 1.6em;
+  font-family: 'Manuale', serif;
+}
+.company_address p{
+  line-height: 0.9em;
+}
+.company_address i{
+  color:rgba(204, 0, 0, 0.83);
 }
 .contact_info{
 	padding-left: 1em;
+}
+.contact_info i{
+  color:rgba(204, 0, 0, 0.83);
 }
 .submit-enquiry{
 	float:left;
