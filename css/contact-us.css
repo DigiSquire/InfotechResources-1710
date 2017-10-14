@@ -1,12 +1,12 @@
 h1 { text-transform: uppercase;
     font-weight: 700;
     font-size: 38px;
-     color: rgba(204, 0, 0, 0.83); 
+     color: rgba(204, 0, 0, 0.83);
 }
 .color1 {
 	color: #000;
 }
-/* -------------------------------- 
+/* --------------------------------
 
 Form
 
@@ -47,7 +47,7 @@ Form
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   color: #2b3e51;
-  
+
 }
 .cd-form input[type="text"],
 .cd-form input[type="email"],
@@ -315,7 +315,7 @@ Form
     transform: scale(0.8);
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
 Custom icons
 
@@ -354,16 +354,16 @@ Custom icons
 
 .cd-form .phone {
   background: url("../images/contact-us-icons/cd-phone.svg") no-repeat 16px center;
-  
+
 }
 .cd-form [required].phone {
-  background: url("../images/contact-us-icons/cd-phone.svg") no-repeat 16px 16px, url("../images/contact-us-icons/cd-required.svg") no-repeat top;
+  background: url("../images/contact-us-icons/cd-phone.svg") no-repeat 16px 16px, url("../images/contact-us-icons/cd-required.svg") no-repeat top right;
    background-color:#ffffff;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-FLoating labels 
+FLoating labels
 
 -------------------------------- */
 .js .floating-labels div {
@@ -404,7 +404,7 @@ FLoating labels
 }
 .company_address{
 	    padding-top: 2em;
-	
+
 }
 .contact_info{
 	padding-left: 1em;
@@ -412,7 +412,7 @@ FLoating labels
 .submit-enquiry{
 	float:left;
 	padding-left:12em;
-	
+
 }
 @media only screen and (min-width: 320px) and (max-width:414px){
 .cd-form {
@@ -422,7 +422,7 @@ FLoating labels
 }
 .submit-enquiry {
     float: left;
-     padding-left: 0em; 
+     padding-left: 0em;
 }
 #address-div{
 	margin-left:0px;
@@ -432,4 +432,3 @@ FLoating labels
     padding-left: 0.6em;
 }
 }
-

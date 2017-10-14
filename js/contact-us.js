@@ -5,10 +5,10 @@ jQuery(document).ready(function($){
 		var inputFields = $('.floating-labels .cd-label').next();
 		inputFields.each(function(){
 			var singleInput = $(this);
-			//check if user is filling one of the form fields 
+			//check if user is filling one of the form fields
 			checkVal(singleInput);
 			singleInput.on('change keyup', function(){
-				checkVal(singleInput);	
+				checkVal(singleInput);
 			});
 		});
 	}
@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
 		( inputField.val() == '' ) ? inputField.prev('.cd-label').removeClass('float') : inputField.prev('.cd-label').addClass('float');
 	}
 	 /* Google Map */
-		 
+
          $('#my-address').gMap({
             zoom: 5,
             scrollwheel: true,
@@ -30,5 +30,26 @@ jQuery(document).ready(function($){
             }
             ]
             });
-              
+						/* Preloader */
+						$(window).on('load', function () {
+							$('body').addClass('loaded');
+						});
+						/* Mobile Navigation Hide or Collapse on Click */
+						$(document).on('click', '.navbar-collapse.in', function (e) {
+							if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+								$(this).collapse('hide');
+							}
+						});
+						$('body').scrollspy({
+							target: '.navbar-collapse',
+							offset: 195
+
+						});
+						// set filter for product page
+						$('.p-nav').click(function (event) {
+							event.preventDefault();
+							var name = $(this).data('title');
+							window.location = '../infotechHeads/products.html?market=' + name;
+						});
+
 });
