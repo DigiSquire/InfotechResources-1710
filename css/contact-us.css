@@ -428,6 +428,11 @@ FLoating labels
 	padding-left:12em;
 
 }
+ .quantity::-webkit-inner-spin-button, 
+.quantity::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+} 
 @media only screen and (min-width: 320px) and (max-width:414px){
 .cd-form {
     width: 90%;
