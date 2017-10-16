@@ -125,6 +125,10 @@
   margin: 26px 0 0 19%;
   outline: none;
   }
+  .dwnld-center{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .enquire  {
   font-size: 1.05em;
   font-family: 'Manuale', serif;
@@ -165,6 +169,7 @@
   .page-header{
     margin-top: 3em;
     font-size: 1.15em;
+    text-align: justify;
     color: #333;
     line-height: 1.4em;
     border: none;
@@ -374,7 +379,7 @@ Blog Default
 *****************************/
 
 .post-thumb{
-  margin: -1px -1px 0;
+  margin: -1px -1px 8px;
   position: relative;
   overflow: hidden;
 }
@@ -432,13 +437,13 @@ Blog Default
   margin-top: 0;
   color: #333;
   text-align:center;
-  font-size: 2em;
+  font-size: 1.6em;
   font-family: 'Manuale', serif;
 
 }
 .product-content {
     text-align: center;
-    padding-left: 1em;
+    padding-left: 2.6em;
     padding-right: 5px;
     font-family: 'Manuale', serif;
     font-size: 1.1em;
@@ -690,28 +695,54 @@ Blog Details
     font-size: 1.8em;
 }
   .dwnld  {
-  margin: 26px 0 0 12%;
+  margin: 26px 0 5% 0;
+  font-size: 0.95em;
+
   }
   .enquire  {
   margin: 26px 0 0 27%;
+  font-size: 0.95em;
   }
-.product-content {
-    padding-left: 12%;
-}
+  .product-content {
+      left: 3%;
+      font-size: 0.9em;
+      text-align: left;
+      padding-right: 0;
+  }
   .nav.navbar-nav.post-nav li{
     display: inline-block;
     margin-right: 15px;
   }
-
+  .post-title {
+    font-size: 1.8em;
+    text-align: left;
+  }
   .author-profile .col-sm-2 img {
     margin-bottom: 20px;
     width: auto;
   }
-
+  .page-header {
+    font-size: 1.02em;
+  }
   .post-comment {
     padding-left: 0;
   }
-
+  .shift-cell {
+    font-size: 0.94em;
+  }
+  .nav-tabs>li>a {
+    font-size: 0.9em;
+  }
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    font-size: 0.95em;
+  }
+  .t2 table td, .t2 table th {
+    font-size: 0.94em;
+}
+  .post-thumb img {
+    max-width: 400px;
+    max-height: 300px;
+  }
   .parrent .post-comment {
     margin-left: 0;
   }
@@ -726,6 +757,18 @@ Blog Details
 
   .single-blog.two-column .post-overlay{
     margin-top: 0;
+  }
+  .padding-top {
+    padding-top: 2em;
+  }
+  .padding-bottom {
+    padding-bottom: 1em;
+  }
+}
+@media only screen and (min-width : 769px) {
+  .center-table{
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media only screen and (max-width : 325px) {
