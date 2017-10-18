@@ -214,7 +214,7 @@ Single slide style
   background-image: url("../images/bg/security.jpg");
 }
 .cd-hero-slider li:nth-of-type(3) {
-  background-image: url("../images/bg/hospital-mobile.jpeg");
+  background-image: url("../images/bg/hospital-6.jpg");
 }
 .cd-hero-slider li:nth-of-type(5) {
   background-image: url(../assets/img.jpg);
@@ -543,7 +543,7 @@ Slider navigation
     background-color: #000;
   }
   .cd-hero-slider li:nth-of-type(3) {
-    background-image: url("../images/bg/hospital.jpeg");
+    background-image: url("../images/bg/hospital-7.png");
   }
   .cd-hero-slider .cd-bg-video-wrapper {
     display: block;
