@@ -868,3 +868,17 @@ Javascript disabled
         right: 62.45%;
       }
 }
+@media only screen and (min-width:1025px) {
+	.cd-slider-nav {
+    position: absolute;
+    width: 85.5%;
+    bottom: 292px;
+    right: 54.19%;
+    z-index: 0;
+    text-align: center;
+    min-height: 95px;
+    background-color: rgba(0, 1, 1, 0.5);
+    transform: rotate(270deg);
+}
+   
+}
