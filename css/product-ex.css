@@ -111,7 +111,7 @@
   .post-thumb   img {
   max-width: 415px;
   max-height: 450px;
-  border: 1px solid #cacaca ;
+  border: none;
   }
   .dwnld  {
   font-size: 1.05em;
