@@ -20,7 +20,7 @@ $subject = 'Digisquire';
 
 $headers = "From: " . $_POST['email'] . "\r\n";
 $headers .= "Reply-To: ". $_POST['email'] . "\r\n";
-$headers .= "CC: himanshusaraswat@outlook.com\r\n";
+
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
@@ -36,7 +36,7 @@ $message .= "<tr><td><strong>Message:</strong> </td><td>" . $_POST['formMessage'
 $message .= "</table>";
 $message .= "</body></html>";
 
-$to  = 'nidamemon29@gmail.com';//replace with your email
+$to  = 'roshnichattur@infotechresources.co.in';//replace with your email
 
 $success = "
 <div class=\"row-fluid\">
