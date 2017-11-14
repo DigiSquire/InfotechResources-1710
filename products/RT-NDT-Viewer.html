@@ -107,7 +107,6 @@
          }
          .cd-dropdown .nav-arrow {
          border-style: solid;
-         _border-style: dashed;
          border-width: 9px;
          border-color: transparent;
          border-top-width: 0;
@@ -164,15 +163,6 @@
          font-weight: 700;
          font-size: 36px;
          }
-         .carousel-indicators {
-         bottom: -70px;
-         left: 325px;
-         }
-         @media (max-width: 767px){
-         .row {
-         margin-right: 0px;
-         }
-         }
          .margin-bottom {
          margin-bottom: 35px;
          font-weight: 300;
@@ -198,13 +188,6 @@
          padding: 0;
          border: 0;
          }
-         body {
-         background-image: url(../images/bg/mo.png);
-         background-repeat: no-repeat;
-         background-attachment: fixed;
-         background-size: cover;
-         }
-
          /*fix this*/
          footer ul,li{
          list-style: none;
@@ -212,47 +195,12 @@
          padding: 0;
          border: 0;
          }
-
-
          /*overwrite*/
-      .single-blog .post-overlay span a {
-      margin-left: 4px;
-      font-size: 16px;
-      top: 55px;
-      }
-      /*carousel*/
-      .carousel-indicators.visible-xs {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: -35px;
-    width: 100%;
-    left: 0;
-  }
-
-  .carousel-indicators.visible-xs li {
-    border-color: #D29948;
-    border-width: 2px;
-    height: 12px;
-    margin: 0 5px 0 0;
-    width: 12px;
-  }
-
-  .carousel-indicators.visible-xs li.active {
-    background: rgba(210, 153, 72, 0.7);
-  }
-  	.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-			height: 221px;
-			vertical-align:middle;
-			 margin: 0 auto;
-}
-  .carousel-control.left{
-background-image:none;
-}
-.carousel-control.right {
-background-image:none;
-}
+         .single-blog .post-overlay span a {
+         margin-left: 4px;
+         font-size: 16px;
+         top: 55px;
+         }
       </style>
    </head>
    <body>
@@ -267,7 +215,7 @@ background-image:none;
          <div class="header-top-area navigation-background">
             <div class="container">
                <div class="row header-connect ">
-                  <div class="col-md-6 col-sm-8  col-xs-12">
+                  <div class="col-md-6 col-sm-8 col-xs-12">
                      <div class="header-half header-call">
                         <p style="margin-bottom: 0px;"><a href="tel:+918049676021"><span><i class="fa fa-phone" aria-hidden="true"></i>+91-8049676021</span></a>
                            <a href="mailto:mktg.itresources@gmail.com?Subject=Query%20Regarding"> <span><i class="fa fa-envelope-o" aria-hidden="true" style="padding-right: 3px;padding-left: 8px;"></i>mktg.itresources@gmail.com</span></a>
@@ -382,93 +330,77 @@ background-image:none;
          <section id="blog-details" class="padding-top padding-bottom">
             <div class="container">
                <div class="row">
-                  <div class="col-md-9 col-sm-7">
+                  <div class="col-md-9 col-sm-12">
                      <div class="row">
                         <div class="col-md-12 col-sm-12">
                            <div class="single-blog blog-details two-column">
-                              <div class="post-thumb col-md-7">
-                                <!-- <img src="..\images\portfolio\rt-ndt.jpg" class="img-responsive" alt=""> -->
-                                <div id="carousel-container">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators visible-xs">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="..\new-images\PNG\Product-1_1.png" alt="">
-                            <!-- <div class="carousel-caption">
-                                <h3>First slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </div> -->
-                        </div>
-                        <div class="item">
-                            <img src="..\new-images\PNG\Product-1_2.png" alt="">
-                            <!-- <div class="carousel-caption">
-                                <h3>Second slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </div> -->
-                        </div>
-                        <div class="item">
-                            <img src="..\new-images\PNG\Product-1_3.png" alt="">
-                            <!-- <div class="carousel-caption">
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </div> -->
-                        </div>
-						<div class="item">
-                            <img src="..\new-images\PNG\Product-1_4.png" alt="">
-                            <!-- <div class="carousel-caption">
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </div> -->
-                        </div>
-						<div class="item">
-                            <img src="..\new-images\PNG\Product-1_5.png" alt="">
-                            <!-- <div class="carousel-caption">
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </div> -->
-                        </div>
-						<div class="item">
-                            <img src="..\new-images\PNG\Product-1_6.png" alt="">
-                            <!-- <div class="carousel-caption">
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </div> -->
-                        </div>
-                    </div>
-                    <a class="left carousel-control hidden-xs" href="#carousel-example-generic" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control hidden-xs" href="#carousel-example-generic" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div><!--/#carousel-example-generic-->
-            </div><!--/#carousel-container-->
-
-                                <a class="enquire" href="../contact.html">Enquire Now</a>
-                              </div>
-							   <div class="col-md-5 col-sm-5 col-xs-12 in-mob-768">
-                                <div class="product-content col-md-12 col-sm-12">
-                                  <h2 class="post-title">
-                                     Product Details
-                                  </h2>
-                                   <table style="margin-bottom: 1em;" class="center-table">
-                                      <tbody>
-                                         <tr>
-                                            <td>Operation Mode</td>
-                                            <td>Automatic</td>
-                                         </tr>
-                                         <tr>
-                                            <td>Power Source</td>
-                                            <td>Electric</td>
-                                         </tr>
-                                      </tbody>
-                                   </table>
-                                   <a class="dwnld" href="../brochures/RT_Viewer.pdf" target="_blank">Download Brochure  <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
-                                </div>
+                              <div class="post-thumb">
+                                 <!-- <img src="..\images\portfolio\rt-ndt.jpg" class="img-responsive" alt=""> -->
+                                 <div id="carousel-container">
+                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                       <ol class="carousel-indicators visible-xs">
+                                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                       </ol>
+                                       <div class="carousel-inner">
+                                          <div class="item active">
+                                             <img src="..\new-images\PNG\Product-1_1.png" alt="">
+                                             <!-- <div class="carousel-caption">
+                                                <h3>First slide label</h3>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                                </div> -->
+                                          </div>
+                                          <div class="item">
+                                             <img src="..\new-images\PNG\Product-1_2.png" alt="">
+                                             <!-- <div class="carousel-caption">
+                                                <h3>Second slide label</h3>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                                </div> -->
+                                          </div>
+                                          <div class="item">
+                                             <img src="..\new-images\PNG\Product-1_3.png" alt="">
+                                             <!-- <div class="carousel-caption">
+                                                <h3>Third slide label</h3>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                                </div> -->
+                                          </div>
+                                          <div class="item">
+                                             <img src="..\new-images\PNG\Product-1_4.png" alt="">
+                                             <!-- <div class="carousel-caption">
+                                                <h3>Third slide label</h3>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                                </div> -->
+                                          </div>
+                                          <div class="item">
+                                             <img src="..\new-images\PNG\Product-1_5.png" alt="">
+                                             <!-- <div class="carousel-caption">
+                                                <h3>Third slide label</h3>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                                </div> -->
+                                          </div>
+                                          <div class="item">
+                                             <img src="..\new-images\PNG\Product-1_6.png" alt="">
+                                             <!-- <div class="carousel-caption">
+                                                <h3>Third slide label</h3>
+                                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                                </div> -->
+                                          </div>
+                                       </div>
+                                       <a class="left carousel-control hidden-xs" href="#carousel-example-generic" data-slide="prev">
+                                       <span class="glyphicon glyphicon-chevron-left"></span>
+                                       </a>
+                                       <a class="right carousel-control hidden-xs" href="#carousel-example-generic" data-slide="next">
+                                       <span class="glyphicon glyphicon-chevron-right"></span>
+                                       </a>
+                                    </div>
+                                    <!--/#carousel-example-generic-->
+                                 </div>
+                                 <!--/#carousel-container-->
+                                 <div class="call-to-action col-xs-12 col-sm-12">
+                                    <a class="enquire" href="../contact.html">Enquire Now</a>
+                                    <a class="dwnld" href="../brochures/Four_relay _board.pdf" target="_blank" title="Four_relay _board Brochure">Download Brochure <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+                                 </div>
                               </div>
                               <div id="tab-container">
                                  <div class="row">
@@ -481,56 +413,56 @@ background-image:none;
                                        </ul>
                                        <div class="tab-content">
                                           <div class="tab-pane fade active in" id="tab1-item1">
-                                            <div class="t2" id="add_t2_1">
-                                               <table border="0">
-                                                  <tbody>
-                                                     <tr>
-                                                        <td height="19" align="left">Luminance</td>
-                                                        <td align="left">1,00,000 Lux Plus</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td height="19" align="left">Dimension of Observation Window</td>
-                                                        <td align="left">As Required. Standard size is 4" X 14"</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td height="19" align="left">Power Supply</td>
-                                                        <td align="left">100V/220V, 50-60 Hz</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td height="19" align="left">Power Consumption</td>
-                                                        <td align="left">&lt; 70 watts</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td height="19" align="left">Viewing Angle</td>
-                                                        <td align="left">Any Angle can be set</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td height="19" align="left">Film Density</td>
-                                                        <td align="left">4.5H/D</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td height="19" align="left">Light Intensity</td>
-                                                        <td align="left">Variable</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td height="20" align="left" valign="bottom">Light Source</td>
-                                                        <td align="left">LED</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td height="19" align="left">Light Source Life Span</td>
-                                                        <td align="left">50,000 Hours Plus</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td height="20" align="left" valign="bottom">Spot Light</td>
-                                                        <td align="left">As Required</td>
-                                                     </tr>
-                                                     <tr>
-                                                        <td height="20" align="left" valign="bottom">Warranty</td>
-                                                        <td align="left"><b>One year</b></td>
-                                                     </tr>
-                                                  </tbody>
-                                               </table>
-                                            </div>
+                                             <div class="t2" id="add_t2_1">
+                                                <table border="0">
+                                                   <tbody>
+                                                      <tr>
+                                                         <td height="19" align="left">Luminance</td>
+                                                         <td align="left">1,00,000 Lux Plus</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="19" align="left">Dimension of Observation Window</td>
+                                                         <td align="left">As Required. Standard size is 4" X 14"</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="19" align="left">Power Supply</td>
+                                                         <td align="left">100V/220V, 50-60 Hz</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="19" align="left">Power Consumption</td>
+                                                         <td align="left">&lt; 70 watts</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="19" align="left">Viewing Angle</td>
+                                                         <td align="left">Any Angle can be set</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="19" align="left">Film Density</td>
+                                                         <td align="left">4.5H/D</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="19" align="left">Light Intensity</td>
+                                                         <td align="left">Variable</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="20" align="left" valign="bottom">Light Source</td>
+                                                         <td align="left">LED</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="19" align="left">Light Source Life Span</td>
+                                                         <td align="left">50,000 Hours Plus</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="20" align="left" valign="bottom">Spot Light</td>
+                                                         <td align="left">As Required</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td height="20" align="left" valign="bottom">Warranty</td>
+                                                         <td align="left"><b>One year</b></td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
                                           </div>
                                        </div>
                                     </div>
@@ -540,40 +472,40 @@ background-image:none;
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-3 col-sm-5">
-                    <div class="sidebar blog-sidebar">
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                     <div class="sidebar blog-sidebar">
                         <div class="sidebar-item  recent">
-                          <div class="title">
-                             <h3><span class="color">Other </span>Products</h3>
-                          </div>
-                          <div class="media">
+                           <div class="title">
+                              <h3><span class="color">Other </span>Products</h3>
+                           </div>
+                           <div class="media">
                               <div class="pull-left">
-                                  <a href="Twelve-Relay-Board.html"> <img src="..\images\portfolio\Product-6_3.png" alt=""></a>
+                                 <a href="Twelve-Relay-Board.html"> <img src="..\images\portfolio\Product-6_3.png" alt=""></a>
                               </div>
                               <div class="media-body">
-                                  <h4><a href="Twelve-Relay-Board.html">Twelve Relay Board</a></h4>
+                                 <h4><a href="Twelve-Relay-Board.html">Twelve Relay Board</a></h4>
                               </div>
-                          </div>
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="Four-Relay-Board.html"><img src="..\images\portfolio\Product-7_6.png" alt=""></a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="Four-Relay-Board.html" >Four Relay Board</a></h4>
-                                </div>
-                            </div>
+                           </div>
+                           <div class="media">
+                              <div class="pull-left">
+                                 <a href="Four-Relay-Board.html"><img src="..\images\portfolio\Product-7_6.png" alt=""></a>
+                              </div>
+                              <div class="media-body">
+                                 <h4><a href="Four-Relay-Board.html" >Four Relay Board</a></h4>
+                              </div>
+                           </div>
                         </div>
                         <div class="sidebar-item categories">
-                          <div class="title">
-                            <h3><span class="color">Other</span> Markets</h3>
-                          </div>
-                            <ul class="nav navbar-stacked">
-                                <li><a class="p-nav" data-title="hospitals" href="#">Hospitals</a></li>
-                                <li><a class="p-nav" data-title="security" href="#">Security</a></li>
-                            </ul>
+                           <div class="title">
+                              <h3><span class="color">Other</span> Markets</h3>
+                           </div>
+                           <ul class="nav navbar-stacked">
+                              <li><a class="p-nav" data-title="hospitals" href="#">Hospitals</a></li>
+                              <li><a class="p-nav" data-title="security" href="#">Security</a></li>
+                           </ul>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </section>
@@ -607,9 +539,9 @@ background-image:none;
                         <a href="tel:+918049676021"><span><i class="fa fa-phone" aria-hidden="true"></i>+91-8049676021</span></a>
                      </li>
                      <li>
-                          <a href="../infotechHeads/contact.html">103,Chitrakoot,Chatushringi Road,
+                        <a href="../infotechHeads/contact.html">103,Chitrakoot,Chatushringi Road,
                         Model Colony, Pune,
-						Maharashtra 411053</a>
+                        Maharashtra 411053</a>
                      </li>
                   </ul>
                </div>
