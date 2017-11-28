@@ -41,7 +41,7 @@ $message .= "<tr><td><strong>Message:</strong> </td><td>" . $_POST['formMessage'
 $message .= "</table>";
 $message .= "</body></html>";
 
-$to  = 'roshnichattur@infotechresources.co.in';//replace with your email
+$to  = 'info@infotechresources.co.in';//replace with your email
 
 $success = "
 <div class=\"row-fluid\">
@@ -57,11 +57,11 @@ $checkmail=mail($to, $subject,$message,$headers);
 
  if ($checkmail) {
 	 echo "$success"; // success
-	
-    
+
+
 } else {
     echo 'Form submission failed. Please try again...'; // failure
-} 
+}
 // Success Message
 echo $checkmail;
 //header("Location: http://digisquire.co");
