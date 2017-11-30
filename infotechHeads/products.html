@@ -16,7 +16,7 @@
       <!-- Favicon -->
       <link rel="shortcut icon" href="../images/favicon/favicon.png">
       <!-- All CSS Plugins -->
-      <link href="../css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
       <link href="../css/font-awesome.min.css" rel="stylesheet">
       <!-- Main CSS Stylesheet -->
       <link rel="stylesheet" type="text/css" href="../css/homeCl.css">
@@ -24,12 +24,12 @@
       <!-- DD style -->
       <link rel="stylesheet" type"text/css" href="../css/products-dd.css">
       <!-- Grid Component css -->
-      <link rel="stylesheet" href="../css/component.css">
+      <link rel="stylesheet" href="../css/component.min.css">
       <link rel="stylesheet" type"text/css" href="../css/product-main.css">
 	   <!-- Google Web Fonts  -->
       <link href="https://fonts.googleapis.com/css?family=Manuale|Poppins" rel="stylesheet">
       <!-- Animate.css -->
-      <script src="../js/modernizr.js"></script> <!-- Modernizr -->
+      <script src="../js/modernizr.min.js"></script> <!-- Modernizr -->
 
       <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
       <!--[if lt IE 9]>
@@ -537,15 +537,17 @@
          </ul>
       </div>
       <!-- All Javascript Plugins  -->
-      <script type="text/javascript" src="../js/jquery.min.js"></script>
-      <script type="text/javascript" src="../js/bocg.js"></script>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+      <script type="text/javascript"  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <!-- Main Javascript File  -->
-      <script type="text/javascript" src="../js/jquery.menu-aim.js"></script>
-      <script type="text/javascript" src="../js/menu.js"></script>
+      <script type="text/javascript" src="../js/jquery.menu-aim.min.js"></script>
+      <script type="text/javascript" src="../js/menu.min.js"></script>
       <!-- Portfolio Filtering -->
       <script src="../js/jquery.mixitup.min.js"></script>
       <!-- Grid js -->
-      <script src="../js/grid.js"></script>
-      <script src="../js/products-portfolio.js"></script>
+      <script src="../js/grid.min.js"></script>
+      <script type="text/javascript">
+        !function(t){"use strict";jQuery(document).ready(function(){t(window).on("load",function(){t("body").addClass("loaded")}),t(document).on("click",".navbar-collapse.in",function(i){t(i.target).is("a")&&"dropdown-toggle"!=t(i.target).attr("class")&&t(this).collapse("hide")}),t("body").scrollspy({target:".navbar-collapse",offset:195}),t(".p-nav").click(function(i){i.preventDefault();var o=t(this).data("title");window.location="../infotechHeads/products.html?market="+o}),t(window).on("load",function(){function i(t){return decodeURI(window.location.search.replace(new RegExp("^(?:.*[&\\?]"+encodeURI(t).replace(/[\.\+\*]/g,"\\$&")+"(?:\\=([^&]*))?)?.*$","i"),"$1"))}var o=i("market");""!=o?t(function(){"hospitals"==o&&t("#og-grid").mixItUp({load:{filter:".hospital"}}),"security"==o&&t("#og-grid").mixItUp({load:{filter:".security"}}),"industrial"==o&&t("#og-grid").mixItUp({load:{filter:".industrial"}})}):t("#og-grid").mixItUp()}),Grid.init()})}(jQuery);
+      </script>
    </body>
 </html>
