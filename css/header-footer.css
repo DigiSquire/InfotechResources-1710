@@ -2,6 +2,10 @@
 .home-section {
 height: 100%;
 }
+.container>.navbar-collapse{
+  margin-right: 0;
+  margin-left:  0;
+}
 #home .header-connect a{
 	color: #333;
 	text-decoration: none;
@@ -169,7 +173,7 @@ min-width: 60px;
 	padding: 10px 15px 10px 10px;
 	}
 	.navigation-background .navbar-toggle .icon-bar {
-	background: #ff8800;
+	background: rgba(204, 0, 0, 0.83);
 	}
 	.navbar {
 	min-height: 0px;
