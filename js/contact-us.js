@@ -30,10 +30,6 @@ jQuery(document).ready(function($){
             }
             ]
             });
-						/* Preloader */
-						$(window).on('load', function () {
-							$('body').addClass('loaded');
-						});
 						/* Mobile Navigation Hide or Collapse on Click */
 						$(document).on('click', '.navbar-collapse.in', function (e) {
 							if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
@@ -43,7 +39,6 @@ jQuery(document).ready(function($){
 						$('body').scrollspy({
 							target: '.navbar-collapse',
 							offset: 195
-
 						});
 						// set filter for product page
 						$('.p-nav').click(function (event) {

@@ -18,10 +18,6 @@
 	'use strict';
 
 	jQuery(document).ready(function () {
-		/* Preloader */
-		$(window).on('load', function () {
-			$('body').addClass('loaded');
-		});
 		/* Mobile Navigation Hide or Collapse on Click */
 		$(document).on('click', '.navbar-collapse.in', function (e) {
 			if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
@@ -39,7 +35,7 @@
 			var name = $(this).data('title');
 			window.location = '../infotechHeads/products.html?market=' + name;
 			});
-	
+
 		// Custom PortFolio Filtering
 		$(window).on('load', function () {
 			function loadPageVar(sVar) {

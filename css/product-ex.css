@@ -1,15 +1,11 @@
 .row {
 	margin-right: 0;
 }
-
-body {
+body{
 	background-image: url(../images/bg/mo.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-}
-.back-layer {
-	background-color: rgba(255, 255, 255, 0.89);
 }
 .title h2 {
 	text-transform: uppercase;
