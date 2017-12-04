@@ -399,6 +399,10 @@ FLoating labels
   .js .floating-labels .cd-label {
     top: 20px;
   }
+ .js .floating-labels .custom-top{
+    top:16px;
+  }
+
 }
 .span_1_of_3 {
     padding: 1.5%;
@@ -428,11 +432,11 @@ FLoating labels
 	padding-left:12em;
 
 }
- .quantity::-webkit-inner-spin-button, 
-.quantity::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-} 
+ .quantity::-webkit-inner-spin-button,
+.quantity::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 @media only screen and (min-width: 320px) and (max-width:414px){
 .cd-form {
     width: 90%;
