@@ -699,7 +699,7 @@
          <ul>
             <li><a href="https://api.whatsapp.com/send?phone=919922107720&text=Hi%20Team%20Infotech,%20have%20a%20query%20regarding" class="scroll-to-top" target="_blank" style="display: inline;margin-bottom: 132px;bottom: 180px;"><i class="fa fa-lg fa-whatsapp" aria-hidden="true"></i></a></li>
             <li><a href="https://www.facebook.com/Infotech-Resources-Ltd-924218594402423/?modal=admin_todo_tour" class="scroll-to-top" target="_blank" style="display: inline;background-color: #3B5998;margin-bottom: 76px;bottom: 180px;"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.indiamart.com/infotech-resources/" class="scroll-to-top" style="display:inline;background-color: #b11a12;bottom: 180px;"target="_blank"><img src="images/favicon/indiamart.png" alt="Digisquire logo" style="max-width: 73%;"></a></li>
+            <li><a rel="nofollow" href="https://www.indiamart.com/infotech-resources/" class="scroll-to-top" style="display:inline;background-color: #b11a12;bottom: 180px;"target="_blank"><img src="images/favicon/indiamart.png" alt="Digisquire logo" style="max-width: 73%;"></a></li>
          </ul>
       </div>
       <!-- All Javascript Plugins  -->
@@ -712,51 +712,7 @@
       <script type="text/javascript" src="js/menu.min.js"></script>
       <script type="text/javascript" src="js/contact-us.js"></script>
       <script type="text/javascript">
-         $(document).ready(function(){
-
-          $('#submitForm').click(function(e){
-
-         if($("form")[0].checkValidity()) {
-         e.preventDefault();
-         console.log("call php file");
-         var name = $("#cd-name").val();
-         var email = $("#cd-email").val();
-         var companyName=$("#cd-company").val();
-         var workPhone=$("#cd-phone").val();
-         var product=$("#product").val();
-         var formMessage=$("#cd-textarea").val();
-
-         $.ajax({
-         type: 'POST',
-         url: 'sendEmail.php', // Your form script
-         data: {  name		:name,
-         	 email		:email,
-         	 companyName:companyName,
-         	 workPhone	:workPhone,
-         	 product:product,
-         	 formMessage	:formMessage
-            },
-         success: function(msg) {
-         if(msg){
-         	console.log("success");
-         	$('#contact-Us').find('input').val('');
-         	$('#contact-Us').find('textarea').val('');
-         	$('#contact-Us').find('#submitForm').val('Submit Enquiry');
-         	$("#contact-Us").hide().delay(20000).fadeIn();
-         	$("#successMessage").html("Thank you for taking the time to contact Infotech Resources .If you need immediate assistance or would like to speak to someone now, please feel free to contact us directly at <strong>+91-9922107720</strong>.").delay(20000).fadeOut();
-         	$('#eId').addClass('email-load').delay(20000);
-
-         }
-         }
-                });
-
-         }else {
-         console.log("invalid form");
-
-         }
-         });
-         });
-
+         $(document).ready(function(){$("#submitForm").click(function(e){if($("form")[0].checkValidity()){e.preventDefault(),console.log("call php file");var a=$("#cd-name").val(),o=$("#cd-email").val(),t=$("#cd-company").val(),c=$("#cd-phone").val(),n=$("#product").val(),l=$("#cd-textarea").val();$.ajax({type:"POST",url:"sendEmail.php",data:{name:a,email:o,companyName:t,workPhone:c,product:n,formMessage:l},success:function(e){e&&(console.log("success"),$("#contact-Us").find("input").val(""),$("#contact-Us").find("textarea").val(""),$("#contact-Us").find("#submitForm").val("Submit Enquiry"),$("#contact-Us").hide().delay(2e4).fadeIn(),$("#successMessage").html("Thank you for taking the time to contact Infotech Resources .If you need immediate assistance or would like to speak to someone now, please feel free to contact us directly at <strong>+91-9922107720</strong>.").delay(2e4).fadeOut(),$("#eId").addClass("email-load").delay(2e4))}})}else console.log("invalid form")})});
       </script>
    </body>
 </html>
